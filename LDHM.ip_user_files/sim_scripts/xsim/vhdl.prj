@@ -1,0 +1,45 @@
+vhdl xpm  \
+"/home/gareth/Vivado/2026.1/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl axi_bram_ctrl_v4_1_14  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/02d4/hdl/axi_bram_ctrl_v4_1_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../bd/Blocks/ip/Blocks_axi_bram_ctrl_0_0/sim/Blocks_axi_bram_ctrl_0_0.vhd" \
+
+vhdl proc_sys_reset_v5_0_17  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/sim/Blocks_rst_ps8_0_299M_0.vhd" \
+"../../../LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_0/bd_0/ip/ip_1/sim/bd_3b42_psr_aclk_0.vhd" \
+
+vhdl smartconnect_v1_0  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/21d5/hdl/sc_ultralite_v1_0_rfs.vhd" \
+
+vhdl xbip_utils_v3_0_16  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/e256/hdl/xbip_utils_v3_0_rfs.vhd" \
+
+vhdl axi_utils_v2_0_12  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/ad9a/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vhdl mult_gen_v12_0_25  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/a82b/hdl/mult_gen_v12_0_rfs.vhd" \
+
+vhdl xbip_pipe_v3_0_12  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/fbf9/hdl/xbip_pipe_v3_0_rfs.vhd" \
+
+vhdl xbip_dsp48_wrapper_v3_0_7  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/9bc6/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vhdl floating_point_v7_1_22  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/f10c/hdl/floating_point_v7_1_vh_rfs.vhd" \
+
+vhdl cmpy_v6_0_28  \
+"../../../LDHM.gen/sources_1/bd/Blocks/ipshared/a6b6/hdl/cmpy_v6_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../bd/Blocks/ip/Blocks_cmpy_0_2/sim/Blocks_cmpy_0_2.vhd" \
+
+# Do not sort compile order
+nosort
