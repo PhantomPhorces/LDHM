@@ -84,6 +84,104 @@ module main(
     end
 endmodule
 
+module fft_stage#(
+    parameter data_size = 32,
+    parameter number_samples = 512,
+    parameter split = data_size/2,
+    parameter address_size = $clog2(data_size)
+)(
+    input wire clk,
+    input wire rst,
+    
+    input wire [data_size-1:0] shift_in,
+    output wire [data_size-1:0] shift_out,
+    output wire [data_size-1:0] shift_out_valid
+);
+    reg signed [data_size-1:0] fifo_shift_in = 'sd0;
+    reg fifo_shift_enable = 0;
+    wire signed [data_size-1:0] fifo_output;
+    wire fifo_reset_busy;
+    
+    reg signed [split-1:0] multiplier_input_a_real = 'sd0;
+    reg signed [split-1:0] multiplier_input_b_real = 'sd0;
+    reg signed [split-1:0] multiplier_input_a_img = 'sd0;
+    reg signed [split-1:0] multiplier_input_b_img = 'sd0;
+    
+    wire signed [data_size:0] multiplier_output_real;
+    wire signed [data_size:0] multiplier_output_img;
+    
+    //Enabling both to start streaming values
+    reg multiplier_enable = 0;
+    wire multiplier_input_a_valid = multiplier_enable;
+    wire multiplier_input_b_valid = multiplier_enable;
+    
+    wire multiplier_output_valid;
+    
+    FIFO #(.data_size(data_size),.memory_size(number_samples)) fifo (
+    .clk (clk),
+    .rst (rst),
+    .value_shift_in (fifo_shift_in),
+    .shift_in_enable (fifo_shift_enable),
+    .shift_out (fifo_output),
+    .reset_busy(fifo_reset_busy)
+    );
+    
+    cmp_div2 mult (
+      .aclk(clk),                              // input wire aclk
+      .s_axis_a_tvalid(multiplier_input_a_valid),        // input wire s_axis_a_tvalid
+      .s_axis_a_tdata({multiplier_input_a_img,multiplier_input_a_real}),          // input wire [31 : 0] s_axis_a_tdata
+      .s_axis_b_tvalid(multiplier_input_b_valid),        // input wire s_axis_b_tvalid
+      .s_axis_b_tdata({multiplier_input_b_img,multiplier_input_b_real}),          // input wire [31 : 0] s_axis_b_tdata
+      
+      .m_axis_dout_tvalid(multiplier_output_valid),  // output wire m_axis_dout_tvalid
+      .m_axis_dout_tdata({multiplier_output_img,multiplier_output_real})    // output wire [63 : 0] m_axis_dout_tdata
+    );
+    
+    reg full = 0;
+    reg [address_size-1:0] initial_values_shifted = 0;
+    
+    
+    always @(posedge clk) begin
+        if(!full) begin
+            fifo_shift_in <= shift_in;
+        end
+    end
+    
+endmodule
+
+module butterfly#(
+    parameter data_size = 32,
+    parameter split = data_size/2
+)(
+    input wire clk,
+    input wire signed [data_size-1:0] inputA,
+    input wire signed [data_size-1:0] inputB,
+    output reg signed [data_size-1:0] sum,
+    output reg signed [data_size-1:0] diff
+);
+    
+    wire signed [split-1:0] a_real = $signed(inputA[split-1:0]);
+    wire signed [split-1:0] b_real = $signed(inputB[split-1:0]);
+    wire signed [split-1:0] a_img  = $signed(inputA[data_size-1:split]);
+    wire signed [split-1:0] b_img  = $signed(inputB[data_size-1:split]);
+    
+    // Scal;ed by 2
+    wire signed [split:0] real_sum = $signed(a_real + b_real); 
+    wire signed [split:0] img_sum = $signed(a_img + b_img);
+    wire signed [split:0] real_diff = $signed(a_real - b_real);
+    wire signed [split:0] img_diff = $signed(a_img - b_img);
+    
+    wire signed [split-1:0] scaled_real_sum = real_sum[split:1]; 
+    wire signed [split-1:0] scaled_img_sum = img_sum[split:1];
+    wire signed [split-1:0] scaled_real_diff = real_diff[split:1];
+    wire signed [split-1:0] scaled_img_diff = img_diff[split:1];
+    
+    always @(posedge clk) begin
+        sum <= {scaled_img_sum, scaled_real_sum};
+        diff <= {scaled_img_diff, scaled_real_diff};
+    end
+endmodule
+
 module FIFO #( //Made with regular registers becaues all FIFOs are less than one BRAM block
     parameter data_size = 32,
     parameter memory_size = 512,

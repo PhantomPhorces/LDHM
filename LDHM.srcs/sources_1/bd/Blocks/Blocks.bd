@@ -7,7 +7,8 @@
       "name": "Blocks",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2026.1"
+      "tool_version": "2026.1",
+      "validated": "true"
     },
     "design_tree": {
       "zynq_ultra_ps_e_0": "",
@@ -27,12 +28,40 @@
       },
       "clk": {
         "type": "clk",
-        "direction": "O"
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "299997009",
+            "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
       },
       "rst": {
         "direction": "O",
         "left": "0",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "const_prop"
+          }
+        }
       },
       "result_0": {
         "direction": "O",
@@ -1536,6 +1565,36 @@
               "HAS_TLAST": {
                 "value": "0",
                 "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "299997009",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
+                "value_src": "default_prop"
+              },
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {}",
+                  "maximum {}} value 73} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} complex {bitwidth {attribs {resolve_type generated dependency set_width",
+                  "format long minimum {} maximum {}} value 33} stride {attribs {resolve_type generated dependency set_stride format long minimum {} maximum {}} value 40} real {fixed {fractwidth {attribs {resolve_type",
+                  "generated dependency set_fractwidth format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}} realfirst",
+                  "{attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} TDATA_WIDTH 80 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string",
+                  "minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format",
+                  "long minimum {} maximum {}} value 0} struct {field_a_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value a_tuser} enabled {attribs {resolve_type",
+                  "generated dependency a_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth",
+                  "{attribs {resolve_type generated dependency a_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}",
+                  "field_b_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value b_tuser} enabled {attribs {resolve_type generated dependency b_enabled format bool minimum",
+                  "{} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency b_width",
+                  "format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency b_offset format long minimum {} maximum {}} value 0}}} field_ctrl_tuser {name {attribs {resolve_type",
+                  "immediate dependency {} format string minimum {} maximum {}} value ctrl_tuser} enabled {attribs {resolve_type generated dependency ctrl_enabled format bool minimum {} maximum {}} value false} datatype",
+                  "{name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency ctrl_width format long minimum {} maximum {}}",
+                  "value 0} bitoffset {attribs {resolve_type generated dependency ctrl_offset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0",
+                  "}"
+                ],
+                "value_src": "ip_prop"
               }
             },
             "port_maps": {
@@ -1587,6 +1646,14 @@
               "HAS_TLAST": {
                 "value": "0",
                 "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "299997009",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
+                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -1638,6 +1705,14 @@
               "HAS_TLAST": {
                 "value": "0",
                 "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "299997009",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
+                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -1666,12 +1741,26 @@
               "ASSOCIATED_RESET": {
                 "value": "rst",
                 "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "299997009",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
+                "value_src": "default_prop"
               }
             }
           },
           "rst": {
             "type": "rst",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
           },
           "result": {
             "direction": "O",

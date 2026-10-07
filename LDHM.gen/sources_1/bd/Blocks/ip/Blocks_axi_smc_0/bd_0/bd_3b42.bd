@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF5995061C8A3FAEA",
+      "boundary_crc": "0x880B4577ED20357C",
       "design_src": "SBD",
       "device": "xck26-sfvc784-2LV-c",
       "name": "bd_3b42",
@@ -188,7 +188,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "18",
+            "value": "15",
             "value_src": "ip_prop"
           },
           "ARUSER_WIDTH": {
@@ -553,7 +553,7 @@
                 "value": "0b0000000000000000000000000000000000000000000000000000000000000000"
               },
               "SEG000_SIZE": {
-                "value": "18"
+                "value": "15"
               },
               "SEG000_SUPPORTS_READ": {
                 "value": "1"
@@ -2079,7 +2079,7 @@
         "has_run_ip_tcl": "true",
         "parameters": {
           "AXI_ADDR_WIDTH": {
-            "value": "18"
+            "value": "15"
           },
           "AXI_ID_WIDTH": {
             "value": "1"
@@ -2232,7 +2232,7 @@
             "has_run_ip_tcl": "true",
             "parameters": {
               "ADDR_WIDTH": {
-                "value": "18"
+                "value": "15"
               },
               "ENABLE_PIPELINING": {
                 "value": "0"
