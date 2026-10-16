@@ -11,6 +11,20 @@ module main(
         input wire clk,
         (* X_INTERFACE_PARAMETER = "POLARITY ACTIVE_LOW" *)
         input wire rst,
+
+        //The output of the multiplier
+        input wire [79:0] complex_return_tdata,
+        input wire complex_return_tvalid,
+        
+        //Input to the multiplier
+        output reg signed [31:0] complex_value_a_tdata = 32'sd0,
+        output reg               complex_value_a_tvalid = 1'b0,
+        
+        output reg signed [31:0] complex_value_b_tdata = 32'sd0,
+        output reg               complex_value_b_tvalid = 1'b0,
+        
+        //Final output (for testing/status) 
+        output reg signed [65:0] result = 66'sd0,
         
         //MAIN INPUT BRAM Reader
         (* X_INTERFACE_PARAMETER = "MASTER_TYPE BRAM_CTRL" *)
@@ -30,104 +44,103 @@ module main(
         input  wire [31:0] bram_main_doutb
     );
 
-    localparam fft_square_size = 512;
-    localparam fft_frame_address_size = $clog2(fft_square_size);
-    
-    localparam number_addresses = fft_square_size * fft_square_size;
-    localparam full_address_size = $clog2(number_addresses);
-    
-    localparam data_size = 32;
-    localparam entry_address_size = $clog2(data_size);
-    
-    
-    localparam [1:0] state_fft = 2'b00,
-                      state_reconstruction = 2'b01,
-                      state_ifft = 2'b10,
-                      state_magnitude = 2'b11;
-    
-    reg [1:0] state = 0;
-    
-    reg fft_reset = 0;
-    
-    reg fft_inverse = 0;
-    reg fft_shift_in_enable = 0;
-    reg [data_size-1:0] fft_shift_in = 0;
-    reg fft_shift_in_valid = 0;
-    wire fft_shift_out;
-    wire fft_shift_out_valid;
-    wire [fft_frame_address_size-1:0] fft_reversed_address;
-    
-    full_fft#(
-    .big_n(fft_square_size),
-    .data_size(data_size)
-    ) fft_unit (
-    .clk(clk),
-    .rst(fft_reset), //Need to assert for at least 2 clock cycles, so handle in its own reset 
-    .inverse(fft_reset),
-    .shift_in_enable(fft_shift_in_enable),
-    .shift_in(fft_shift_in),
-    .shift_in_valid(fft_shift_in_valid),
-    .shift_out(fft_shift_out),
-    .shift_out_valid(fft_shift_out_valid),
-    .bit_reverse_address(fft_reversed_address)
-    );
-    
-    //Ping-pong banks for calculations. 
-    reg [full_address_size-1:0] bank_one_read_address = 0;
-    reg [full_address_size-1:0] bank_one_write_address = 0;
-    reg [entry_address_size-1:0] bank_one_write_data = 0;
-    reg bank_one_write_enable = 0;
-    wire [entry_address_size-1:0] bank_one_read_data;
-    
-    URAM #( 
-        .data_size(data_size),
-        .memory_size(fft_square_size * fft_square_size)
-    ) bank_one (
-        .clk(clk),
-        .write_enable(bank_one_write_enable),
-        .write_address(bank_one_write_address),
-        .write_data(bank_one_write_data),
-        .read_address(bank_one_read_address),
-        .read_out(bank_one_read_data)
-    );
-    
-    reg [full_address_size-1:0] bank_two_read_address = 0;
-    reg [full_address_size-1:0] bank_two_write_address = 0;
-    reg [entry_address_size-1:0] bank_two_write_data = 0;
-    reg bank_two_write_enable = 0;
-    wire [entry_address_size-1:0] bank_two_read_data;
-    
-    URAM #(
-        .data_size(data_size),
-        .memory_size(fft_square_size * fft_square_size)
-    ) bank_two (
-        .clk(clk),
-        .write_enable(bank_two_write_enable),
-        .write_address(bank_two_write_address),
-        .write_data(bank_two_write_data),
-        .read_address(bank_two_read_address),
-        .read_out(bank_two_read_data)
-    );
-    
+    localparam BIG_N = 512;
+
+    // Connect BRAM Port B Clock and Active-High Reset
+    assign bram_main_clkb = clk;
+    assign bram_main_rstb = ~rst;
+
+    localparam STATE_IDLE        = 2'd0;
+    localparam STATE_READ_BRAM   = 2'd1;
+    localparam STATE_FLUSH_ZEROS = 2'd2;
+    localparam STATE_DONE        = 2'd3;
+
+    reg [1:0] state = STATE_IDLE;
+    reg [8:0] addr_counter = 9'd0;
+    reg [9:0] out_count    = 10'd0;
+    reg       bram_read_valid = 1'b0;
+    reg       fft_done = 1'b0;
+
+    // 1-cycle delay to compensate for synchronous BRAM read latency
     always @(posedge clk) begin
-    
-    
-        case(state)
-            state_fft: begin
-                
-            end
-            state_reconstruction: begin
-                
-            end
-            state_ifft: begin
-            
-            end
-            state_magnitude: begin
-            
-            end
-        endcase
+        if (!rst) begin
+            bram_read_valid <= 1'b0;
+        end else begin
+            bram_read_valid <= (state == STATE_READ_BRAM);
+        end
     end
-    
+
+    wire        fft_shift_in_enable = bram_read_valid || (state == STATE_FLUSH_ZEROS);
+    wire [31:0] fft_shift_in        = (bram_read_valid) ? bram_main_doutb : 32'd0;
+    wire [31:0] fft_shift_out;
+    wire        fft_shift_out_valid;
+
+    full_fft #(
+        .big_n(BIG_N),
+        .data_size(32)
+    ) dut_fft (
+        .clk             (clk),
+        .rst             (rst),
+        .inverse         (1'b0),
+        .shift_in_enable (fft_shift_in_enable),
+        .shift_in        (fft_shift_in),
+        .shift_in_valid  (fft_shift_in_enable),
+        .shift_out       (fft_shift_out),
+        .shift_out_valid (fft_shift_out_valid)
+    );
+
+    // Bit-reversed bin index tracking
+    wire [8:0] out_bin = {
+        out_count[0], out_count[1], out_count[2],
+        out_count[3], out_count[4], out_count[5],
+        out_count[6], out_count[7], out_count[8]
+    };
+
+    always @(posedge clk) begin
+        if (!rst) begin
+            state           <= STATE_IDLE;
+            addr_counter    <= 9'd0;
+            out_count       <= 10'd0;
+            bram_main_addrb <= 32'd0;
+            fft_done        <= 1'b0;
+            result          <= 66'sd0;
+        end else begin
+            case (state)
+                STATE_IDLE: begin
+                    state           <= STATE_READ_BRAM;
+                    addr_counter    <= 9'd0;
+                    bram_main_addrb <= 32'd0;
+                end
+
+                STATE_READ_BRAM: begin
+                    if (addr_counter == BIG_N - 1) begin
+                        state <= STATE_FLUSH_ZEROS;
+                    end else begin
+                        addr_counter    <= addr_counter + 9'd1;
+                        bram_main_addrb <= (addr_counter + 9'd1) << 2;
+                    end
+                end
+
+                STATE_FLUSH_ZEROS: begin
+                    if (fft_shift_out_valid && (out_count == BIG_N - 1)) begin
+                        state    <= STATE_DONE;
+                        fft_done <= 1'b1;
+                    end
+                end
+
+                STATE_DONE: begin
+                    fft_done <= 1'b1;
+                end
+            endcase
+
+            if (fft_shift_out_valid && (out_count < BIG_N)) begin
+                out_count <= out_count + 10'd1;
+            end
+
+            // Status output: [65]=Done, [64]=Valid, [49:41]=Sample Index, [40:32]=Bin Index, [31:0]=Output Data
+            result <= {fft_done, fft_shift_out_valid, 14'd0, out_count[8:0], out_bin, fft_shift_out};
+        end
+    end
 
 endmodule    
 

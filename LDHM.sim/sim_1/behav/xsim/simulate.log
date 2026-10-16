@@ -14,4 +14,3 @@ Time resolution is 1 ps
  CSV written to: fft_sim_results.csv
 ================================================================
 $finish called at time : 10895 ns : File "/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sim_1/new/tb_main.v" Line 175
-INFO: xsimkernel Simulation Memory Usage: 368184 KB (Peak: 433720 KB), Simulation CPU Usage: 1280 ms
