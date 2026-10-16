@@ -2,7 +2,7 @@
 //Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2026.1 (lin64) Build 6511674 Tue Jun 16 11:01:26 MDT 2026
-//Date        : Sun Oct  4 22:56:27 2026
+//Date        : Fri Oct  9 16:19:23 2026
 //Host        : gareth-inspiron153520 running 64-bit Manjaro Linux
 //Command     : generate_target Blocks.bd
 //Design      : Blocks
@@ -12,46 +12,25 @@
 
 (* CORE_GENERATION_INFO = "Blocks,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Blocks,x_ipVersion=1.00.a,x_ipLanguage=VERILOG}" *) (* HW_HANDOFF = "Blocks.hwdef" *) 
 module Blocks
-   (BRAM_PORTB_0_addr,
-    BRAM_PORTB_0_clk,
-    BRAM_PORTB_0_din,
-    BRAM_PORTB_0_dout,
-    BRAM_PORTB_0_en,
-    BRAM_PORTB_0_rst,
-    BRAM_PORTB_0_we,
-    clk,
+   (clk,
     result_0,
     rst,
     rsta_busy_0,
     rstb_busy_0);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 ADDR" *) (* X_INTERFACE_MODE = "Slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTB_0, MASTER_TYPE OTHER, MEM_ECC NONE, MEM_SIZE 8192, MEM_WIDTH 32, READ_LATENCY 1, READ_WRITE_MODE READ_WRITE" *) input [31:0]BRAM_PORTB_0_addr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 CLK" *) input BRAM_PORTB_0_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 DIN" *) input [31:0]BRAM_PORTB_0_din;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 DOUT" *) output [31:0]BRAM_PORTB_0_dout;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 EN" *) input BRAM_PORTB_0_en;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 RST" *) input BRAM_PORTB_0_rst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB_0 WE" *) input [3:0]BRAM_PORTB_0_we;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN Blocks_zynq_ultra_ps_e_0_0_pl_clk0, FREQ_HZ 299997009, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output clk;
-  output [63:0]result_0;
+  output [65:0]result_0;
   output [0:0]rst;
   output rsta_busy_0;
   output rstb_busy_0;
 
-  wire [31:0]BRAM_PORTB_0_addr;
-  wire BRAM_PORTB_0_clk;
-  wire [31:0]BRAM_PORTB_0_din;
-  wire [31:0]BRAM_PORTB_0_dout;
-  wire BRAM_PORTB_0_en;
-  wire BRAM_PORTB_0_rst;
-  wire [3:0]BRAM_PORTB_0_we;
-  wire [13:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
+  wire [14:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTA_CLK;
   wire [127:0]axi_bram_ctrl_0_BRAM_PORTA_DIN;
   wire [127:0]axi_bram_ctrl_0_BRAM_PORTA_DOUT;
   wire axi_bram_ctrl_0_BRAM_PORTA_EN;
   wire axi_bram_ctrl_0_BRAM_PORTA_RST;
   wire [15:0]axi_bram_ctrl_0_BRAM_PORTA_WE;
-  wire [13:0]axi_smc_M00_AXI_ARADDR;
+  wire [14:0]axi_smc_M00_AXI_ARADDR;
   wire [1:0]axi_smc_M00_AXI_ARBURST;
   wire [3:0]axi_smc_M00_AXI_ARCACHE;
   wire [7:0]axi_smc_M00_AXI_ARLEN;
@@ -60,7 +39,7 @@ module Blocks
   wire axi_smc_M00_AXI_ARREADY;
   wire [2:0]axi_smc_M00_AXI_ARSIZE;
   wire axi_smc_M00_AXI_ARVALID;
-  wire [13:0]axi_smc_M00_AXI_AWADDR;
+  wire [14:0]axi_smc_M00_AXI_AWADDR;
   wire [1:0]axi_smc_M00_AXI_AWBURST;
   wire [3:0]axi_smc_M00_AXI_AWCACHE;
   wire [7:0]axi_smc_M00_AXI_AWLEN;
@@ -89,7 +68,14 @@ module Blocks
   wire main_0_S_AXIS_A_0_TVALID;
   wire [31:0]main_0_S_AXIS_B_0_TDATA;
   wire main_0_S_AXIS_B_0_TVALID;
-  wire [63:0]result_0;
+  wire [31:0]main_bram_main_ADDR;
+  wire main_bram_main_CLK;
+  wire [31:0]main_bram_main_DIN;
+  wire [31:0]main_bram_main_DOUT;
+  wire main_bram_main_EN;
+  wire main_bram_main_RST;
+  wire [3:0]main_bram_main_WE;
+  wire [65:0]result_0;
   wire [0:0]rst;
   wire rsta_busy_0;
   wire rstb_busy_0;
@@ -249,23 +235,23 @@ module Blocks
         .aclk(clk),
         .aresetn(rst));
   Blocks_blk_mem_gen_0_0 blk_mem_gen_0
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
-        .addrb(BRAM_PORTB_0_addr),
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
+        .addrb(main_bram_main_ADDR),
         .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
-        .clkb(BRAM_PORTB_0_clk),
+        .clkb(main_bram_main_CLK),
         .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
-        .dinb(BRAM_PORTB_0_din),
+        .dinb(main_bram_main_DIN),
         .douta(axi_bram_ctrl_0_BRAM_PORTA_DOUT),
-        .doutb(BRAM_PORTB_0_dout),
+        .doutb(main_bram_main_DOUT),
         .ena(axi_bram_ctrl_0_BRAM_PORTA_EN),
-        .enb(BRAM_PORTB_0_en),
+        .enb(main_bram_main_EN),
         .rsta(axi_bram_ctrl_0_BRAM_PORTA_RST),
         .rsta_busy(rsta_busy_0),
-        .rstb(BRAM_PORTB_0_rst),
+        .rstb(main_bram_main_RST),
         .rstb_busy(rstb_busy_0),
         .wea(axi_bram_ctrl_0_BRAM_PORTA_WE),
-        .web(BRAM_PORTB_0_we));
-  Blocks_cmpy_0_2 cmpy_2
+        .web(main_bram_main_WE));
+  Blocks_cmpy_0_2 cmpy_0
        (.aclk(clk),
         .m_axis_dout_tdata(cmpy_2_M_AXIS_DOUT_TDATA),
         .m_axis_dout_tvalid(cmpy_2_M_AXIS_DOUT_TVALID),
@@ -273,14 +259,21 @@ module Blocks
         .s_axis_a_tvalid(main_0_S_AXIS_A_0_TVALID),
         .s_axis_b_tdata(main_0_S_AXIS_B_0_TDATA),
         .s_axis_b_tvalid(main_0_S_AXIS_B_0_TVALID));
-  Blocks_main_0_0 main_0
-       (.M_AXIS_DOUT_0_tdata(cmpy_2_M_AXIS_DOUT_TDATA),
-        .M_AXIS_DOUT_0_tvalid(cmpy_2_M_AXIS_DOUT_TVALID),
-        .S_AXIS_A_0_tdata(main_0_S_AXIS_A_0_TDATA),
-        .S_AXIS_A_0_tvalid(main_0_S_AXIS_A_0_TVALID),
-        .S_AXIS_B_0_tdata(main_0_S_AXIS_B_0_TDATA),
-        .S_AXIS_B_0_tvalid(main_0_S_AXIS_B_0_TVALID),
+  Blocks_main_0_0 main
+       (.bram_main_addrb(main_bram_main_ADDR),
+        .bram_main_clkb(main_bram_main_CLK),
+        .bram_main_dinb(main_bram_main_DIN),
+        .bram_main_doutb(main_bram_main_DOUT),
+        .bram_main_enb(main_bram_main_EN),
+        .bram_main_rstb(main_bram_main_RST),
+        .bram_main_web(main_bram_main_WE),
         .clk(clk),
+        .complex_return_tdata(cmpy_2_M_AXIS_DOUT_TDATA),
+        .complex_return_tvalid(cmpy_2_M_AXIS_DOUT_TVALID),
+        .complex_value_a_tdata(main_0_S_AXIS_A_0_TDATA),
+        .complex_value_a_tvalid(main_0_S_AXIS_A_0_TVALID),
+        .complex_value_b_tdata(main_0_S_AXIS_B_0_TDATA),
+        .complex_value_b_tvalid(main_0_S_AXIS_B_0_TVALID),
         .result(result_0),
         .rst(rst));
   Blocks_rst_ps8_0_299M_0 rst_ps8_0_299M

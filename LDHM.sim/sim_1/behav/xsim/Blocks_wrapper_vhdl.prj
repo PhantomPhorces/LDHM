@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../LDHM.ip_user_files/bd/Blocks/ip/Blocks_axi_bram_ctrl_0_0/sim/Blocks_axi_bram_ctrl_0_0.vhd" \
-"../../../../LDHM.ip_user_files/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/sim/Blocks_rst_ps8_0_299M_0.vhd" \
-"../../../../LDHM.ip_user_files/bd/Blocks/ip/Blocks_axi_smc_0/bd_0/ip/ip_1/sim/bd_3b42_psr_aclk_0.vhd" \
-"../../../../LDHM.ip_user_files/bd/Blocks/ip/Blocks_cmpy_0_2/sim/Blocks_cmpy_0_2.vhd" \
-
-# Do not sort compile order
-nosort

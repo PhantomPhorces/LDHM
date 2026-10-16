@@ -2,7 +2,7 @@
    "ActiveEmotionalView":"Default View",
    "Default View_Layers":"/zynq_ultra_ps_e_0_pl_clk0:true|",
    "Default View_ScaleFactor":"1.16629",
-   "Default View_TopLeft":"-28,324",
+   "Default View_TopLeft":"-121,332",
    "Display-IntfAXIStream":"true",
    "Display-IntfOthers":"true",
    "Display-IntfTypeAXIMM":"true",
@@ -21,23 +21,19 @@ preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 720 -y 550 -defaultsOSRD
 preplace inst axi_bram_ctrl_0 -pg 1 -lvl 2 -x 720 -y 420 -defaultsOSRD -orient R180
 preplace inst rst_ps8_0_299M -pg 1 -lvl 1 -x 210 -y 230 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 2 -x 720 -y 250 -defaultsOSRD
-preplace inst cmpy_0 -pg 1 -lvl 1 -x 210 -y 440 -defaultsOSRD -orient R180
 preplace inst main -pg 1 -lvl 1 -x 210 -y 590 -defaultsOSRD
 preplace netloc blk_mem_gen_0_rsta_busy 1 2 1 NJ 540
-preplace netloc blk_mem_gen_0_rstb_busy 1 2 1 1020J 560n
-preplace netloc main_0_result 1 1 2 NJ 620 NJ
-preplace netloc rst_ps8_0_299M_peripheral_aresetn 1 0 3 30 340 380 340 1030
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 20 330 410 630 1040
+preplace netloc blk_mem_gen_0_rstb_busy 1 2 1 1040J 560n
+preplace netloc main_0_result 1 1 2 NJ 620n NJ
+preplace netloc rst_ps8_0_299M_peripheral_aresetn 1 0 3 40 340 380 340 1030
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 30 130 410 330 1040
 preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 40 100 N
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 420 420n
 preplace netloc axi_smc_M00_AXI 1 2 1 1020 250n
-preplace netloc cmpy_2_M_AXIS_DOUT 1 0 1 40 440n
-preplace netloc main_0_S_AXIS_A_0 1 1 1 380 460n
-preplace netloc main_0_S_AXIS_B_0 1 1 1 390 440n
-preplace netloc main_bram_main 1 1 1 N 560
+preplace netloc main_bram_main 1 1 1 380 560n
 preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 420 120n
 levelinfo -pg 1 0 210 720 1060
-pagesize -pg 1 -db -bbox -sgen 0 0 1230 720
+pagesize -pg 1 -db -bbox -sgen 0 0 1260 820
 "
 }
 0

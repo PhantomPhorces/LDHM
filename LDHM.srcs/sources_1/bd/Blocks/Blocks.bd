@@ -7,8 +7,7 @@
       "name": "Blocks",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2026.1",
-      "validated": "true"
+      "tool_version": "2026.1"
     },
     "design_tree": {
       "zynq_ultra_ps_e_0": "",
@@ -16,7 +15,6 @@
       "axi_bram_ctrl_0": "",
       "rst_ps8_0_299M": "",
       "axi_smc": "",
-      "cmpy_0": "",
       "main": ""
     },
     "ports": {
@@ -28,40 +26,12 @@
       },
       "clk": {
         "type": "clk",
-        "direction": "O",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
-            "value_src": "default_prop"
-          },
-          "FREQ_HZ": {
-            "value": "299997009",
-            "value_src": "user_prop"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "O"
       },
       "rst": {
         "direction": "O",
         "left": "0",
-        "right": "0",
-        "parameters": {
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "const_prop"
-          }
-        }
+        "right": "0"
       },
       "result_0": {
         "direction": "O",
@@ -1448,25 +1418,6 @@
           }
         }
       },
-      "cmpy_0": {
-        "vlnv": "xilinx.com:ip:cmpy:6.0",
-        "ip_revision": "28",
-        "xci_name": "Blocks_cmpy_0_2",
-        "xci_path": "ip/Blocks_cmpy_0_2/Blocks_cmpy_0_2.xci",
-        "inst_hier_path": "cmpy_0",
-        "has_run_ip_tcl": "true",
-        "parameters": {
-          "MinimumLatency": {
-            "value": "4"
-          },
-          "OptimizeGoal": {
-            "value": "Performance"
-          },
-          "OutputWidth": {
-            "value": "33"
-          }
-        }
-      },
       "main": {
         "vlnv": "xilinx.com:module_ref:main:1.0",
         "ip_revision": "1",
@@ -1528,205 +1479,6 @@
                 "direction": "O"
               }
             }
-          },
-          "complex_return": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
-            "parameters": {
-              "TDATA_NUM_BYTES": {
-                "value": "10",
-                "value_src": "constant"
-              },
-              "TDEST_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TID_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TUSER_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TREADY": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TSTRB": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TKEEP": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TLAST": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "299997009",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
-              },
-              "LAYERED_METADATA": {
-                "value": [
-                  "xilinx.com:interface:datatypes:1.0 {",
-                  "TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {}",
-                  "maximum {}} value 73} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} complex {bitwidth {attribs {resolve_type generated dependency set_width",
-                  "format long minimum {} maximum {}} value 33} stride {attribs {resolve_type generated dependency set_stride format long minimum {} maximum {}} value 40} real {fixed {fractwidth {attribs {resolve_type",
-                  "generated dependency set_fractwidth format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}} realfirst",
-                  "{attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}} TDATA_WIDTH 80 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string",
-                  "minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format",
-                  "long minimum {} maximum {}} value 0} struct {field_a_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value a_tuser} enabled {attribs {resolve_type",
-                  "generated dependency a_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth",
-                  "{attribs {resolve_type generated dependency a_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}",
-                  "field_b_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value b_tuser} enabled {attribs {resolve_type generated dependency b_enabled format bool minimum",
-                  "{} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency b_width",
-                  "format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency b_offset format long minimum {} maximum {}} value 0}}} field_ctrl_tuser {name {attribs {resolve_type",
-                  "immediate dependency {} format string minimum {} maximum {}} value ctrl_tuser} enabled {attribs {resolve_type generated dependency ctrl_enabled format bool minimum {} maximum {}} value false} datatype",
-                  "{name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency ctrl_width format long minimum {} maximum {}}",
-                  "value 0} bitoffset {attribs {resolve_type generated dependency ctrl_offset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0",
-                  "}"
-                ],
-                "value_src": "ip_prop"
-              }
-            },
-            "port_maps": {
-              "TDATA": {
-                "physical_name": "complex_return_tdata",
-                "direction": "I",
-                "left": "79",
-                "right": "0"
-              },
-              "TVALID": {
-                "physical_name": "complex_return_tvalid",
-                "direction": "I"
-              }
-            }
-          },
-          "complex_value_a": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
-            "parameters": {
-              "TDATA_NUM_BYTES": {
-                "value": "4",
-                "value_src": "constant"
-              },
-              "TDEST_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TID_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TUSER_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TREADY": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TSTRB": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TKEEP": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TLAST": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "299997009",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
-              }
-            },
-            "port_maps": {
-              "TDATA": {
-                "physical_name": "complex_value_a_tdata",
-                "direction": "O",
-                "left": "31",
-                "right": "0"
-              },
-              "TVALID": {
-                "physical_name": "complex_value_a_tvalid",
-                "direction": "O"
-              }
-            }
-          },
-          "complex_value_b": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
-            "parameters": {
-              "TDATA_NUM_BYTES": {
-                "value": "4",
-                "value_src": "constant"
-              },
-              "TDEST_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TID_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TUSER_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TREADY": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TSTRB": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TKEEP": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TLAST": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "299997009",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
-              }
-            },
-            "port_maps": {
-              "TDATA": {
-                "physical_name": "complex_value_b_tdata",
-                "direction": "O",
-                "left": "31",
-                "right": "0"
-              },
-              "TVALID": {
-                "physical_name": "complex_value_b_tvalid",
-                "direction": "O"
-              }
-            }
           }
         },
         "ports": {
@@ -1734,21 +1486,13 @@
             "type": "clk",
             "direction": "I",
             "parameters": {
-              "ASSOCIATED_BUSIF": {
-                "value": "complex_return:complex_value_a:complex_value_b",
-                "value_src": "constant"
-              },
               "ASSOCIATED_RESET": {
                 "value": "rst",
                 "value_src": "constant"
               },
-              "FREQ_HZ": {
-                "value": "299997009",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Blocks_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
+              "ASSOCIATED_BUSIF": {
+                "value": "bram_main",
+                "value_src": "constant"
               }
             }
           },
@@ -1758,14 +1502,9 @@
             "parameters": {
               "POLARITY": {
                 "value": "ACTIVE_LOW",
-                "value_src": "const_prop"
+                "value_src": "constant"
               }
             }
-          },
-          "result": {
-            "direction": "O",
-            "left": "65",
-            "right": "0"
           }
         }
       }
@@ -1781,24 +1520,6 @@
         "interface_ports": [
           "axi_smc/M00_AXI",
           "axi_bram_ctrl_0/S_AXI"
-        ]
-      },
-      "cmpy_2_M_AXIS_DOUT": {
-        "interface_ports": [
-          "cmpy_0/M_AXIS_DOUT",
-          "main/complex_return"
-        ]
-      },
-      "main_0_S_AXIS_A_0": {
-        "interface_ports": [
-          "cmpy_0/S_AXIS_A",
-          "main/complex_value_a"
-        ]
-      },
-      "main_0_S_AXIS_B_0": {
-        "interface_ports": [
-          "cmpy_0/S_AXIS_B",
-          "main/complex_value_b"
         ]
       },
       "main_bram_main": {
@@ -1829,7 +1550,6 @@
       },
       "main_0_result": {
         "ports": [
-          "main/result",
           "result_0"
         ]
       },
@@ -1850,7 +1570,6 @@
           "axi_smc/aclk",
           "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
           "zynq_ultra_ps_e_0/saxihp0_fpd_aclk",
-          "cmpy_0/aclk",
           "clk",
           "main/clk"
         ]
