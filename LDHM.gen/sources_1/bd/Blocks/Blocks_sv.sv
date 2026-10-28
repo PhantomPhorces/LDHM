@@ -53,24 +53,11 @@
 `include "vivado_interfaces.svh"
 
 module Blocks_sv (
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire rstb_busy_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire rsta_busy_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire clk,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire [0:0] rst,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire [65:0] result_0
+
 );
 
   Blocks inst (
-    .rstb_busy_0(rstb_busy_0),
-    .rsta_busy_0(rsta_busy_0),
-    .clk(clk),
-    .rst(rst),
-    .result_0(result_0)
+
   );
 
 endmodule

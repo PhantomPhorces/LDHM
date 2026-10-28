@@ -26,7 +26,7 @@ module twiddle( // Maximum is 512
     input wire inverse_coefficients,
     output reg [31:0] twiddle_factor
     );
-    reg [31:0] twiddle [0:255]; //Biggest is 512
+    (* rom_style = "distributed" *) reg [31:0] twiddle [0:255]; //Biggest is 512
     reg negate;
     wire [9:0] half_way = 10'd256;
     reg signed [15:0] base_real;

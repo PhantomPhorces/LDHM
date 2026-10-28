@@ -131,6 +131,7 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
     public:
     // Non-AXI ports are declared here
     sc_core::sc_in<bool> maxihpm0_fpd_aclk;
+    sc_core::sc_in<bool> maxihpm1_fpd_aclk;
     sc_core::sc_in<bool> saxihp0_fpd_aclk;
     sc_core::sc_in<sc_dt::sc_bv<1> >  pl_ps_irq0;
     sc_core::sc_out<bool> pl_resetn0;
@@ -146,6 +147,8 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
     // master sockets defined in vivado generated wrapper.
     xtlm::xtlm_aximm_initiator_socket*      M_AXI_HPM0_FPD_wr_socket;
     xtlm::xtlm_aximm_initiator_socket*      M_AXI_HPM0_FPD_rd_socket;
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_HPM1_FPD_wr_socket;
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_HPM1_FPD_rd_socket;
 
     //constructor having three paramters
     // 1. module name in sc_module_name objec, 
@@ -180,6 +183,7 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
     // simple initiator socket of xilinx_zynqmp and xtlm 
     // socket with xilinx_zynqmp's simple target socket
     rptlm2xtlm_converter<32, 128 > m_rp_bridge_M_AXI_HPM0_FPD;     
+    rptlm2xtlm_converter<32, 128 > m_rp_bridge_M_AXI_HPM1_FPD;     
     
 
     // sc_clocks for generating pl clocks

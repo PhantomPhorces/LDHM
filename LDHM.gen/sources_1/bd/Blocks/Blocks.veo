@@ -54,11 +54,7 @@
 
 // INST_TAG     ------ Begin cut for INSTANTIATION Template ------
 Blocks your_instance_name (
-  .rstb_busy_0(rstb_busy_0), // output wire rstb_busy_0
-  .rsta_busy_0(rsta_busy_0), // output wire rsta_busy_0
-  .clk(clk), // output wire clk
-  .rst(rst), // output wire [0:0] rst
-  .result_0(result_0) // output wire [65:0] result_0
+
 );
 // INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

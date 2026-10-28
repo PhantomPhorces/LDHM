@@ -1,0 +1,1533 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 02-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 28 14:04:19 2026
+# Process ID         : 310160
+# Current directory  : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1
+# Command line       : vivado -log Blocks_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Blocks_wrapper.tcl -notrace
+# Log file           : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/Blocks_wrapper.vdi
+# Journal file       : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/vivado.jou
+# Running On         : gareth-inspiron153520
+# Platform           : ManjaroLinux
+# Operating System   : Manjaro Linux
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency      : 400.168 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 12203 MB
+# Swap memory        : 25769 MB
+# Total Virtual      : 37973 MB
+# Available Virtual  : 25066 MB
+#-----------------------------------------------------------
+source Blocks_wrapper.tcl -notrace
+Command: link_design -top Blocks_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_bram_ctrl_0_0/Blocks_axi_bram_ctrl_0_0.dcp' for cell 'Blocks_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_bram_ctrl_0_1/Blocks_axi_bram_ctrl_0_1.dcp' for cell 'Blocks_i/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_0/Blocks_axi_smc_0.dcp' for cell 'Blocks_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_1/Blocks_axi_smc_1.dcp' for cell 'Blocks_i/axi_smc1'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_blk_mem_gen_0_0/Blocks_blk_mem_gen_0_0.dcp' for cell 'Blocks_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_blk_mem_gen_0_1/Blocks_blk_mem_gen_0_1.dcp' for cell 'Blocks_i/blk_mem_gen_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_main_0_0/Blocks_main_0_0.dcp' for cell 'Blocks_i/main'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/Blocks_rst_ps8_0_299M_0.dcp' for cell 'Blocks_i/rst_ps8_0_299M'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_zynq_ultra_ps_e_0_0/Blocks_zynq_ultra_ps_e_0_0.dcp' for cell 'Blocks_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/recon_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/squarer/squarer.dcp' for cell 'Blocks_i/main/inst/squarer_m'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/squarer/squarer.dcp' for cell 'Blocks_i/main/inst/squarer_n'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/t1_multiplier/t1_multiplier.dcp' for cell 'Blocks_i/main/inst/t1_applicator'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[0].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[1].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[2].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[3].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[4].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[5].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[6].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[7].stage/mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2.dcp' for cell 'Blocks_i/main/inst/fft_unit/stages[8].stage/mult'
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2801.109 ; gain = 0.000 ; free physical = 4274 ; free virtual = 22362
+INFO: [Netlist 29-17] Analyzing 937 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_zynq_ultra_ps_e_0_0/Blocks_zynq_ultra_ps_e_0_0.xdc] for cell 'Blocks_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_zynq_ultra_ps_e_0_0/Blocks_zynq_ultra_ps_e_0_0.xdc] for cell 'Blocks_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/Blocks_rst_ps8_0_299M_0_board.xdc] for cell 'Blocks_i/rst_ps8_0_299M/U0'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/Blocks_rst_ps8_0_299M_0_board.xdc] for cell 'Blocks_i/rst_ps8_0_299M/U0'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_0/bd_0/ip/ip_1/bd_3b42_psr_aclk_0_board.xdc] for cell 'Blocks_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_0/bd_0/ip/ip_1/bd_3b42_psr_aclk_0_board.xdc] for cell 'Blocks_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_0/smartconnect.xdc] for cell 'Blocks_i/axi_smc/inst'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_0/smartconnect.xdc] for cell 'Blocks_i/axi_smc/inst'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_1/bd_0/ip/ip_1/bd_fb83_psr_aclk_0_board.xdc] for cell 'Blocks_i/axi_smc1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_1/bd_0/ip/ip_1/bd_fb83_psr_aclk_0_board.xdc] for cell 'Blocks_i/axi_smc1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_1/smartconnect.xdc] for cell 'Blocks_i/axi_smc1/inst'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_axi_smc_1/smartconnect.xdc] for cell 'Blocks_i/axi_smc1/inst'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mipi_phy_if_clk_p'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mipi_phy_if_clk_n'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mipi_phy_if_data_p[*]'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mipi_phy_if_data_n[*]'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_rst_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_rst_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_rst_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_rst_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_standby'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_standby'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_standby'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ap1302_standby'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fan_en_b'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_scl_io'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_sda_io'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_*'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_*'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_*'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_tx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mclk_out_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lrclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sclk_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sdata_rx'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raspi_enable[0]'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raspi_enable[0]'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raspi_enable[0]'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raspi_enable[0]'. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-1714] 44 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[18].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[18].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[20].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[20].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[21].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[21].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[22].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[22].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[23].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[23].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[24].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[24].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[30].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[30].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[31].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[31].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[33].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[33].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[35].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[35].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[38].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[38].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[39].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[39].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[40].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[40].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[41].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[41].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[42].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[42].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[43].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[43].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[44].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[44].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[45].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[45].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[46].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[46].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[47].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[47].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[48].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[48].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[49].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[49].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[50].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[50].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[51].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[51].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[52].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[52].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[53].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[53].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[54].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_B has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[54].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36_TDP.ram_T has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Common 17-14] Message 'Opt 31-422' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3645.141 ; gain = 0.000 ; free physical = 3645 ; free virtual = 21742
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 366 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 44 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 32 instances
+  RAM16X1S => RAM32X1S (RAMS32): 128 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 64 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+132 Infos, 57 Warnings, 57 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 3645.176 ; gain = 0.000 ; free physical = 3608 ; free virtual = 21710
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 271494d30
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3942.117 ; gain = 0.000 ; free physical = 3285 ; free virtual = 21386
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 271494d30
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3942.117 ; gain = 0.000 ; free physical = 3285 ; free virtual = 21386
+Phase 1 Initialization | Checksum: 271494d30
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3942.117 ; gain = 0.000 ; free physical = 3285 ; free virtual = 21386
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 271494d30
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3942.117 ; gain = 0.000 ; free physical = 3270 ; free virtual = 21372
+
+Phase 2.2 Timer Update
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 2.2 Timer Update | Checksum: 271494d30
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:02 . Memory (MB): peak = 4004.117 ; gain = 62.000 ; free physical = 3250 ; free virtual = 21341
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 271494d30
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:02 . Memory (MB): peak = 4004.117 ; gain = 62.000 ; free physical = 3243 ; free virtual = 21334
+Phase 2 Timer Update And Timing Data Collection | Checksum: 271494d30
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:02 . Memory (MB): peak = 4004.117 ; gain = 62.000 ; free physical = 3243 ; free virtual = 21334
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 21 pins
+INFO: [Opt 31-138] Pushed 54 inverter(s) to 505 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 2962e7917
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:02 . Memory (MB): peak = 4004.117 ; gain = 62.000 ; free physical = 3243 ; free virtual = 21334
+Retarget | Checksum: 2962e7917
+INFO: [Opt 31-389] Phase Retarget created 82 cells and removed 422 cells
+INFO: [Opt 31-1021] In phase Retarget, 40 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 3 load pin(s).
+Phase 4 Constant propagation | Checksum: 2099b4f04
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:02 . Memory (MB): peak = 4004.117 ; gain = 62.000 ; free physical = 3243 ; free virtual = 21334
+Constant propagation | Checksum: 2099b4f04
+INFO: [Opt 31-389] Phase Constant propagation created 23 cells and removed 116 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 40 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4004.117 ; gain = 0.000 ; free physical = 3242 ; free virtual = 21348
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4004.117 ; gain = 0.000 ; free physical = 3242 ; free virtual = 21348
+Phase 5 Sweep | Checksum: 282747e17
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4004.117 ; gain = 62.000 ; free physical = 3242 ; free virtual = 21348
+Sweep | Checksum: 282747e17
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2023 cells
+INFO: [Opt 31-1021] In phase Sweep, 51 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 282747e17
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4036.133 ; gain = 94.016 ; free physical = 3242 ; free virtual = 21348
+BUFG optimization | Checksum: 282747e17
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 282747e17
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4036.133 ; gain = 94.016 ; free physical = 3242 ; free virtual = 21348
+Shift Register Optimization | Checksum: 282747e17
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+INFO: [Opt 31-1555] control_set_opt supports Versal devices only, and device xck26 is unsupported
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 225c3e585
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4036.133 ; gain = 94.016 ; free physical = 3242 ; free virtual = 21348
+Post Processing Netlist | Checksum: 225c3e585
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 40 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1aa2277d4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4036.133 ; gain = 94.016 ; free physical = 3242 ; free virtual = 21348
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4036.133 ; gain = 0.000 ; free physical = 3242 ; free virtual = 21348
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1aa2277d4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4036.133 ; gain = 94.016 ; free physical = 3242 ; free virtual = 21348
+Phase 9 Finalization | Checksum: 1aa2277d4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4036.133 ; gain = 94.016 ; free physical = 3242 ; free virtual = 21348
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              82  |             422  |                                             40  |
+|  Constant propagation         |              23  |             116  |                                             40  |
+|  Sweep                        |               0  |            2023  |                                             51  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             40  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1aa2277d4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4036.133 ; gain = 94.016 ; free physical = 3242 ; free virtual = 21348
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4036.133 ; gain = 0.000 ; free physical = 3242 ; free virtual = 21348
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+161 Infos, 57 Warnings, 57 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4036.133 ; gain = 0.000 ; free physical = 3240 ; free virtual = 21348
+INFO: [Common 17-1381] The checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/Blocks_wrapper_opt.dcp' has been generated.
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Vivado_Tcl 4-2302] The placer was invoked with the 'Explore' directive.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4188.207 ; gain = 0.000 ; free physical = 3178 ; free virtual = 21300
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 178fd8f61
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4188.207 ; gain = 0.000 ; free physical = 3178 ; free virtual = 21300
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4188.207 ; gain = 0.000 ; free physical = 3178 ; free virtual = 21300
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1805f5253
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4505.219 ; gain = 317.012 ; free physical = 2657 ; free virtual = 20878
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 195a4d155
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:19 . Memory (MB): peak = 4544.262 ; gain = 356.055 ; free physical = 2692 ; free virtual = 20917
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 195a4d155
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:19 . Memory (MB): peak = 4544.262 ; gain = 356.055 ; free physical = 2692 ; free virtual = 20917
+Phase 1 Placer Initialization | Checksum: 195a4d155
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:19 . Memory (MB): peak = 4544.262 ; gain = 356.055 ; free physical = 2692 ; free virtual = 20917
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 24590361e
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:23 . Memory (MB): peak = 4544.262 ; gain = 356.055 ; free physical = 2691 ; free virtual = 20917
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 24590361e
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:24 . Memory (MB): peak = 4544.262 ; gain = 356.055 ; free physical = 2690 ; free virtual = 20917
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 24b4ea205
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:25 . Memory (MB): peak = 4544.262 ; gain = 356.055 ; free physical = 2690 ; free virtual = 20917
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 24b4ea205
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:29 . Memory (MB): peak = 4802.246 ; gain = 614.039 ; free physical = 2564 ; free virtual = 20985
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1c7c90cdd
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:30 . Memory (MB): peak = 4802.246 ; gain = 614.039 ; free physical = 2562 ; free virtual = 20983
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 1dbc4c3a9
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:30 . Memory (MB): peak = 4834.262 ; gain = 646.055 ; free physical = 2560 ; free virtual = 20982
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 1dbc4c3a9
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:30 . Memory (MB): peak = 4834.262 ; gain = 646.055 ; free physical = 2560 ; free virtual = 20982
+Phase 2.1.1 Partition Driven Placement | Checksum: 1dbc4c3a9
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:30 . Memory (MB): peak = 4834.262 ; gain = 646.055 ; free physical = 2560 ; free virtual = 20982
+Phase 2.1 Floorplanning | Checksum: 1da931773
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:30 . Memory (MB): peak = 4834.262 ; gain = 646.055 ; free physical = 2560 ; free virtual = 20982
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1da931773
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:31 . Memory (MB): peak = 4834.262 ; gain = 646.055 ; free physical = 2560 ; free virtual = 20982
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 241d80bd6
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:31 . Memory (MB): peak = 4834.262 ; gain = 646.055 ; free physical = 2560 ; free virtual = 20982
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 2839163cf
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:00:51 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2342 ; free virtual = 20767
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 246fed10b
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:00:52 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2343 ; free virtual = 20768
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 9 LUTNM shape to break, 683 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 3, two critical 6, total 9, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 316 nets or LUTs. Breaked 9 LUTs, combined 307 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 12 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 12 nets.  Re-placed 38 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 12 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 38 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4928.273 ; gain = 0.000 ; free physical = 2336 ; free virtual = 20763
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-457] Pass 1. Identified 4 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell Blocks_i/main/inst/recon_mult/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell Blocks_i/main/inst/recon_mult/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell Blocks_i/main/inst/recon_mult/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell Blocks_i/main/inst/recon_mult/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp. 16 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 4 nets or cells. Created 64 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4928.273 ; gain = 0.000 ; free physical = 2336 ; free virtual = 20763
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4928.273 ; gain = 0.000 ; free physical = 2336 ; free virtual = 20764
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            9  |            307  |                   316  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                    12  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |           64  |              0  |                     4  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           73  |            307  |                   332  |           0  |          10  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1ffa4df36
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:00:55 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2336 ; free virtual = 20764
+Phase 2.5 Global Place Phase2 | Checksum: 200351d28
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:00:59 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2353 ; free virtual = 20783
+Phase 2 Global Placement | Checksum: 200351d28
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:00:59 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2353 ; free virtual = 20783
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2a6ef39e9
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:04 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2375 ; free virtual = 20805
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 23ee5ba35
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:05 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2380 ; free virtual = 20810
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 2369e0403
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:01:11 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2384 ; free virtual = 20819
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1ddd9fa1e
+
+Time (s): cpu = 00:03:45 ; elapsed = 00:01:12 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2385 ; free virtual = 20820
+Phase 3.3.2 Slice Area Swap | Checksum: 1ddd9fa1e
+
+Time (s): cpu = 00:03:45 ; elapsed = 00:01:12 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2385 ; free virtual = 20820
+Phase 3.3 Small Shape DP | Checksum: 20dfa445f
+
+Time (s): cpu = 00:03:48 ; elapsed = 00:01:13 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2377 ; free virtual = 20814
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 21b60275e
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:01:13 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2380 ; free virtual = 20817
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1e2d55ea9
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:01:13 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2380 ; free virtual = 20817
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 235bd27a0
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:01:19 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2382 ; free virtual = 20819
+Phase 3 Detail Placement | Checksum: 235bd27a0
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:01:19 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2382 ; free virtual = 20819
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 322736ac5
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.110 | TNS=-0.468 |
+Phase 1 Physical Synthesis Initialization | Checksum: 18e572e79
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.38 . Memory (MB): peak = 4928.273 ; gain = 0.000 ; free physical = 2381 ; free virtual = 20819
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 2a9a29c8b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.43 . Memory (MB): peak = 4928.273 ; gain = 0.000 ; free physical = 2381 ; free virtual = 20819
+Phase 4.1.1.1 BUFG Insertion | Checksum: 322736ac5
+
+Time (s): cpu = 00:04:54 ; elapsed = 00:01:29 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2381 ; free virtual = 20819
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.050. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 28d734bb3
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:01:41 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2407 ; free virtual = 20846
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:01:41 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2407 ; free virtual = 20846
+Phase 4.1 Post Commit Optimization | Checksum: 23fec58bd
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:01:41 . Memory (MB): peak = 4928.273 ; gain = 740.066 ; free physical = 2407 ; free virtual = 20846
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2304 ; free virtual = 20743
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 24aeb4558
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:49 . Memory (MB): peak = 4969.246 ; gain = 781.039 ; free physical = 2304 ; free virtual = 20743
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 24aeb4558
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:49 . Memory (MB): peak = 4969.246 ; gain = 781.039 ; free physical = 2304 ; free virtual = 20743
+Phase 4.3 Placer Reporting | Checksum: 24aeb4558
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:49 . Memory (MB): peak = 4969.246 ; gain = 781.039 ; free physical = 2304 ; free virtual = 20743
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2304 ; free virtual = 20743
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:49 . Memory (MB): peak = 4969.246 ; gain = 781.039 ; free physical = 2304 ; free virtual = 20743
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 287b57933
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:49 . Memory (MB): peak = 4969.246 ; gain = 781.039 ; free physical = 2304 ; free virtual = 20743
+Ending Placer Task | Checksum: 1f4a69b83
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:49 . Memory (MB): peak = 4969.246 ; gain = 781.039 ; free physical = 2304 ; free virtual = 20743
+207 Infos, 57 Warnings, 57 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2303 ; free virtual = 20742
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2303 ; free virtual = 20742
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2299 ; free virtual = 20741
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2298 ; free virtual = 20740
+Wrote PlaceStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.61 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2270 ; free virtual = 20734
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2262 ; free virtual = 20729
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2262 ; free virtual = 20732
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.72 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2262 ; free virtual = 20733
+INFO: [Common 17-1381] The checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/Blocks_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:04 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2274 ; free virtual = 20726
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 18.28s |  WALL: 3.89s
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4969.246 ; gain = 0.000 ; free physical = 2274 ; free virtual = 20726
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.050 | TNS=-0.050 |
+Phase 1 Physical Synthesis Initialization | Checksum: dd73a336
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2260 ; free virtual = 20715
+
+Phase 2 SLR Crossing Optimization
+Phase 2 SLR Crossing Optimization | Checksum: dd73a336
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2260 ; free virtual = 20715
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.050 | TNS=-0.050 |
+
+Phase 3 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 3 Fanout Optimization | Checksum: dd73a336
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2260 ; free virtual = 20716
+
+Phase 4 Single Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 173 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[8].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_2
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[15].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_7
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_3_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[15].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[15]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[2].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[2]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_20.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[2]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[2].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[2]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[7].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[14]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[14].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[14]_i_4
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[14]_i_2_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[14]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[14].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[14]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[4].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[4]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_18.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[4]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[4].  Re-placed instance Blocks_i/main/inst/fft_shift_in_reg[4]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[14].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_18
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/FSM_sequential_global_state_reg[0]_0.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[14]_i_3
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_68_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_68
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[18].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_14
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_13.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[18]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_60_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_60
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[18].  Re-placed instance Blocks_i/main/inst/fft_shift_in_reg[18]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[2].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_30
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_92_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_92
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[21].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[30]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_1.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[30]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[30].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[30]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[6].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[13].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_6
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_2_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[13].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[13]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[4].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_28
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[30]_i_3_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[30]_i_3
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_87_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_87
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[0].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_32
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_22.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[0]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_96_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_96
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[0].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[0]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[15].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_17
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/FSM_sequential_global_state_reg[0].  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[15]_i_4
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_66_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_66
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[30].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_35_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_35
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[9].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[18]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[19].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[28]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_3.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[28]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[28].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[28]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[5].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[12]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[12].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[12]_i_2
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[12]_i_4_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[12]_i_4
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[12].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[12]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[31].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_0.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[31]_i_2
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_34_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_34
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[31].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[31]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[23].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_9
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/D[3].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[10]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[10].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[10]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_8.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[23]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_49_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_49
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[10].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[10]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[23].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[23]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[20]_i_3_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[20]_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[11].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[20]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_11.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[20]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[20].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[20]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[4]_i_3_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[4]_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[22].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[31]_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[10].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_22
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/dc_term_reg[3].  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[10]_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_75_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_75
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[22].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_10
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_9.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[22]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_51_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_51
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[22].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[22]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_7_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_7
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[14]_i_6_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[14]_i_6
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[13].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_19
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/FSM_sequential_global_state_reg[0]_1.  Re-placed instance Blocks_i/main/inst/bank_two/fft_shift_in[13]_i_3
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_69_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_69
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[11].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_21
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[4].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[11]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/dc_term_reg[4].  Re-placed instance Blocks_i/main/inst/bank_two/fft_shift_in[11]_i_3
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_74_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_74
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[11].  Re-placed instance Blocks_i/main/inst/fft_shift_in_reg[11]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[12]_i_5_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[12]_i_5
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[18]_i_4_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[18]_i_4
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[1].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[1]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_21.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[1]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[1].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[1]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[3].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_29
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_19.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[3]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_33_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_33
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_89_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_89
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[3].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[3]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[29].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[0].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[7]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[7].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[7]_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_2.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[29]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_37_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_37
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[29].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[29]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[7].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[7]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[14].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[23]_i_2
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_11_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_11
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[20].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[29]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[25].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_7
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_6.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[25]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_45_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_45
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[25].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[25]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[11].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[11]_i_2
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_70_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_70
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[8].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_24
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[1].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[8]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/dc_term_reg[1].  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[8]_i_3
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_52_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_52
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_79_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_79
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[8].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[8]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_73_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_73
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[16]_i_3_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[16]_i_3
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[7].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[16]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_15.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[16]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[16].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[16]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[24].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_8
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_7.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[24]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_47_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_47
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[24].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[24]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[2]_i_4_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[2]_i_4
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[19].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_13
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_12.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[19]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_57_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_57
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[19].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[19]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[9].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_23
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/D[2].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[9]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/dc_term_reg[2]_0.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[9]_i_3
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_77_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_77
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[9].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[9]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[5].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[5]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_17.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[5]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[5].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[5]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[16].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_16
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_63_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_63
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[27].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_5
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_4.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[27]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_41_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_41
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[27].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[27]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_65_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_65
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[7].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_25
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[7]_i_7_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[7]_i_7
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/FSM_sequential_global_state_reg[0]_2.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[7]_i_4
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_82_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_82
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[17].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_15
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_14.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[17]_i_1
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_62_n_0.  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_62
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[17].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[17]
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/s_axis_b_tdata[6].  Did not re-place instance Blocks_i/main/inst/bank_two/recon_mult_i_26
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_8_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[13]_i_8
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[17]_i_3_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[17]_i_3
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[8].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[17]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/fft_state_reg[1]_16.  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[6]_i_1
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_83_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_83
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/fft_shift_in_reg_n_0_[6].  Did not re-place instance Blocks_i/main/inst/fft_shift_in_reg[6]
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_91_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_91
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_36_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_36
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[31]_i_4_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[31]_i_4
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[31]_i_5_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[31]_i_5
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/recon_mult_i_80_n_0.  Re-placed instance Blocks_i/main/inst/bank_two/recon_mult_i_80
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/bank_one_read_data[9].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[9]_i_2
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/previous_row_read_byte_select_reg_0[16].  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[25]_i_2
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_two/bram_main_doutb[16].  Re-placed instance Blocks_i/main/inst/bank_two/fft_shift_in[7]_i_5
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/dc_term_reg[4].  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_9
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_two/dc_term_reg[2].  Did not re-place instance Blocks_i/main/inst/bank_two/fft_shift_in[10]_i_6
+INFO: [Physopt 32-662] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_5_n_0.  Did not re-place instance Blocks_i/main/inst/bank_one/fft_shift_in[15]_i_5
+INFO: [Physopt 32-663] Processed net Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_b.B/doutb[8].  Re-placed instance Blocks_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_b.B/doutb[8]_INST_0
+INFO: [Physopt 32-663] Processed net Blocks_i/main/inst/bank_one/fft_shift_in[28]_i_3_n_0.  Re-placed instance Blocks_i/main/inst/bank_one/fft_shift_in[28]_i_3
+INFO: [Physopt 32-661] Optimized 54 nets.  Re-placed 54 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 54 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 54 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.007 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Phase 4 Single Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 5 Multi Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Multi Cell Placement Optimization was not performed.
+Phase 5 Multi Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 6 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 6 Rewire | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 7 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 7 Critical Cell Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 8 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Phase 8 Fanout Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20717
+
+Phase 9 Single Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Single Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20717
+Phase 9 Single Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20717
+
+Phase 10 Multi Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Multi Cell Placement Optimization was not performed.
+Phase 10 Multi Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20717
+
+Phase 11 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 11 Rewire | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20717
+
+Phase 12 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 12 Critical Cell Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 13 SLR Crossing Optimization
+Phase 13 SLR Crossing Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 14 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Phase 14 Fanout Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 15 Single Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Single Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Phase 15 Single Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 16 Multi Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Multi Cell Placement Optimization was not performed.
+Phase 16 Multi Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 17 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 17 Rewire | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 18 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 18 Critical Cell Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 19 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 19 DSP Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 20 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 20 BRAM Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 21 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 21 URAM Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 22 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 22 Shift Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 23 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 23 DSP Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 24 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 24 BRAM Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 25 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 25 URAM Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 26 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 26 Shift Register Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 27 Critical Pin Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Pin Optimization was not performed.
+Phase 27 Critical Pin Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 28 Very High Fanout Optimization
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 28 Very High Fanout Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 29 Single Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Single Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Phase 29 Single Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 30 Multi Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Multi Cell Placement Optimization was not performed.
+Phase 30 Multi Cell Placement Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 31 SLR Crossing Optimization
+Phase 31 SLR Crossing Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 32 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.007 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.007 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Phase 32 Critical Path Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+
+Phase 33 BRAM Enable Optimization
+Phase 33 BRAM Enable Optimization | Checksum: 18d62c14a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:09 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+INFO: [Physopt 32-960] Skip hold-fix as initial WHS does not violate hold threshold 250 ps
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.007 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization            |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Single Cell Placement   |          0.057  |          0.050  |            0  |              0  |                    54  |           0  |           1  |  00:00:06  |
+|  Multi Cell Placement    |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Rewire                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Cell           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  SLR Crossing            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  DSP Register            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Pin            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Enable             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                   |          0.057  |          0.050  |            0  |              0  |                    54  |           0  |           8  |  00:00:06  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Ending Physical Synthesis Task | Checksum: 14ca5fb67
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:10 . Memory (MB): peak = 5001.262 ; gain = 32.016 ; free physical = 2261 ; free virtual = 20716
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+429 Infos, 57 Warnings, 57 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2261 ; free virtual = 20716
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2262 ; free virtual = 20719
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2262 ; free virtual = 20720
+Wrote PlaceStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.73 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2231 ; free virtual = 20711
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2231 ; free virtual = 20714
+Wrote Device Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2231 ; free virtual = 20717
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.84 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2231 ; free virtual = 20717
+INFO: [Common 17-1381] The checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/Blocks_wrapper_physopt.dcp' has been generated.
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xck26'
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 1e8219c7 ConstDB: 0 ShapeSum: 3055f109 RouteDB: d11672e7
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.4 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2250 ; free virtual = 20722
+Post Restoration Checksum: NetGraph: b711cb30 | NumContArr: 885d5633 | Constraints: b7bc6b5a | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2b9d4875a
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:05 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2245 ; free virtual = 20719
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2b9d4875a
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:05 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2245 ; free virtual = 20719
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2b9d4875a
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:05 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2245 ; free virtual = 20719
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 235290bbf
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:06 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2244 ; free virtual = 20719
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2448b3cab
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:08 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2244 ; free virtual = 20720
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.049  | TNS=0.000  | WHS=-0.075 | THS=-131.837|
+
+
+Phase 2.5 Soft Constraint Pins - Fast Budgeting
+Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 22931e9cf
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:10 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2246 ; free virtual = 20722
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 40796
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 38159
+  Number of Partially Routed Nets     = 2637
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1f91ce40d
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:11 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2246 ; free virtual = 20721
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1f91ce40d
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:11 . Memory (MB): peak = 5001.262 ; gain = 0.000 ; free physical = 2246 ; free virtual = 20721
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 2212f7042
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:00:38 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1639 ; free virtual = 20117
+Phase 4 Initial Routing | Checksum: 1e2451eca
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:00:38 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1639 ; free virtual = 20117
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 2700
+ Number of Nodes with overlaps = 228
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.074  | TNS=0.000  | WHS=-0.010 | THS=-0.025 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 270499544
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:00:56 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1650 ; free virtual = 20128
+
+Phase 5.2 Additional Iteration for Hold
+Phase 5.2 Additional Iteration for Hold | Checksum: 1e62e7b78
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:00:56 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1650 ; free virtual = 20128
+Phase 5 Rip-up And Reroute | Checksum: 1e62e7b78
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:00:56 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1650 ; free virtual = 20128
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 TNS Cleanup
+
+Phase 6.1.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.074  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.074  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+Phase 6.1.1 Delay CleanUp | Checksum: 2ada42863
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:00:57 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1650 ; free virtual = 20128
+Phase 6.1 TNS Cleanup | Checksum: 2ada42863
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:00:57 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1650 ; free virtual = 20128
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 2ada42863
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:00:57 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1650 ; free virtual = 20128
+Phase 6 Delay and Skew Optimization | Checksum: 2ada42863
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:00:57 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1650 ; free virtual = 20128
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.074  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:11 ; elapsed = 00:00:59 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20129
+Phase 7 Post Hold Fix | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:11 ; elapsed = 00:00:59 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20129
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.23352 %
+  Global Horizontal Routing Utilization  = 2.02382 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:12 ; elapsed = 00:00:59 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20129
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:12 ; elapsed = 00:00:59 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20128
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:14 ; elapsed = 00:01:00 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20128
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:01:00 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20128
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:01:00 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20128
+
+Phase 13 Route finalize
+Phase 13 Route finalize | Checksum: 2af04265d
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:01:00 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20128
+
+Phase 14 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.074  | TNS=0.000  | WHS=0.012  | THS=0.000  |
+
+Phase 14 Post Router Timing | Checksum: 2831e1ece
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:01:04 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20129
+INFO: [Route 35-61] The design met the setup and hold requirement.
+Total Elapsed time in route_design: 63.67 secs
+
+Phase 15 Post-Route Event Processing
+Phase 15 Post-Route Event Processing | Checksum: 104b34af2
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:01:04 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20129
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 104b34af2
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:01:04 . Memory (MB): peak = 5546.246 ; gain = 544.984 ; free physical = 1651 ; free virtual = 20129
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+444 Infos, 57 Warnings, 57 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1651 ; free virtual = 20129
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1651 ; free virtual = 20129
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1651 ; free virtual = 20131
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.33 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1645 ; free virtual = 20139
+Wrote PlaceStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.58 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1619 ; free virtual = 20127
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1619 ; free virtual = 20130
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1611 ; free virtual = 20125
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.97 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1611 ; free virtual = 20125
+INFO: [Common 17-1381] The checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/Blocks_wrapper_routed.dcp' has been generated.
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xck26'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode 
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1632 ; free virtual = 20131
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.074 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+454 Infos, 57 Warnings, 57 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1632 ; free virtual = 20131
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1632 ; free virtual = 20131
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1630 ; free virtual = 20132
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.41 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1624 ; free virtual = 20138
+Wrote PlaceStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.59 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1599 ; free virtual = 20127
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1599 ; free virtual = 20129
+Wrote Device Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1591 ; free virtual = 20125
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5546.246 ; gain = 0.000 ; free physical = 1591 ; free virtual = 20125
+INFO: [Common 17-1381] The checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/Blocks_wrapper_postroute_physopt.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 14:08:14 2026...

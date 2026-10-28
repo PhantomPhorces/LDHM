@@ -68,7 +68,7 @@ typedef bit bit_as_bool;
 module Blocks_axi_bram_ctrl_0_0 (
   input bit_as_bool s_axi_aclk,
   input bit_as_bool s_axi_aresetn,
-  input bit [14 : 0] s_axi_awaddr,
+  input bit [18 : 0] s_axi_awaddr,
   input bit [7 : 0] s_axi_awlen,
   input bit [2 : 0] s_axi_awsize,
   input bit [1 : 0] s_axi_awburst,
@@ -77,15 +77,15 @@ module Blocks_axi_bram_ctrl_0_0 (
   input bit [2 : 0] s_axi_awprot,
   input bit_as_bool s_axi_awvalid,
   output bit_as_bool s_axi_awready,
-  input bit [127 : 0] s_axi_wdata,
-  input bit [15 : 0] s_axi_wstrb,
+  input bit [31 : 0] s_axi_wdata,
+  input bit [3 : 0] s_axi_wstrb,
   input bit_as_bool s_axi_wlast,
   input bit_as_bool s_axi_wvalid,
   output bit_as_bool s_axi_wready,
   output bit [1 : 0] s_axi_bresp,
   output bit_as_bool s_axi_bvalid,
   input bit_as_bool s_axi_bready,
-  input bit [14 : 0] s_axi_araddr,
+  input bit [18 : 0] s_axi_araddr,
   input bit [7 : 0] s_axi_arlen,
   input bit [2 : 0] s_axi_arsize,
   input bit [1 : 0] s_axi_arburst,
@@ -94,7 +94,7 @@ module Blocks_axi_bram_ctrl_0_0 (
   input bit [2 : 0] s_axi_arprot,
   input bit_as_bool s_axi_arvalid,
   output bit_as_bool s_axi_arready,
-  output bit [127 : 0] s_axi_rdata,
+  output bit [31 : 0] s_axi_rdata,
   output bit [1 : 0] s_axi_rresp,
   output bit_as_bool s_axi_rlast,
   output bit_as_bool s_axi_rvalid,
@@ -102,10 +102,10 @@ module Blocks_axi_bram_ctrl_0_0 (
   output bit_as_bool bram_rst_a,
   output bit_as_bool bram_clk_a,
   output bit_as_bool bram_en_a,
-  output bit [15 : 0] bram_we_a,
-  output bit [14 : 0] bram_addr_a,
-  output bit [127 : 0] bram_wrdata_a,
-  input bit [127 : 0] bram_rddata_a
+  output bit [3 : 0] bram_we_a,
+  output bit [18 : 0] bram_addr_a,
+  output bit [31 : 0] bram_wrdata_a,
+  input bit [31 : 0] bram_rddata_a
 );
 endmodule
 `endif
@@ -117,7 +117,7 @@ module Blocks_axi_bram_ctrl_0_0 (s_axi_aclk,s_axi_aresetn,s_axi_awaddr,s_axi_awl
 *);
   input bit s_axi_aclk;
   input bit s_axi_aresetn;
-  input bit [14 : 0] s_axi_awaddr;
+  input bit [18 : 0] s_axi_awaddr;
   input bit [7 : 0] s_axi_awlen;
   input bit [2 : 0] s_axi_awsize;
   input bit [1 : 0] s_axi_awburst;
@@ -126,15 +126,15 @@ module Blocks_axi_bram_ctrl_0_0 (s_axi_aclk,s_axi_aresetn,s_axi_awaddr,s_axi_awl
   input bit [2 : 0] s_axi_awprot;
   input bit s_axi_awvalid;
   output wire s_axi_awready;
-  input bit [127 : 0] s_axi_wdata;
-  input bit [15 : 0] s_axi_wstrb;
+  input bit [31 : 0] s_axi_wdata;
+  input bit [3 : 0] s_axi_wstrb;
   input bit s_axi_wlast;
   input bit s_axi_wvalid;
   output wire s_axi_wready;
   output wire [1 : 0] s_axi_bresp;
   output wire s_axi_bvalid;
   input bit s_axi_bready;
-  input bit [14 : 0] s_axi_araddr;
+  input bit [18 : 0] s_axi_araddr;
   input bit [7 : 0] s_axi_arlen;
   input bit [2 : 0] s_axi_arsize;
   input bit [1 : 0] s_axi_arburst;
@@ -143,7 +143,7 @@ module Blocks_axi_bram_ctrl_0_0 (s_axi_aclk,s_axi_aresetn,s_axi_awaddr,s_axi_awl
   input bit [2 : 0] s_axi_arprot;
   input bit s_axi_arvalid;
   output wire s_axi_arready;
-  output wire [127 : 0] s_axi_rdata;
+  output wire [31 : 0] s_axi_rdata;
   output wire [1 : 0] s_axi_rresp;
   output wire s_axi_rlast;
   output wire s_axi_rvalid;
@@ -151,9 +151,9 @@ module Blocks_axi_bram_ctrl_0_0 (s_axi_aclk,s_axi_aresetn,s_axi_awaddr,s_axi_awl
   output wire bram_rst_a;
   output wire bram_clk_a;
   output wire bram_en_a;
-  output wire [15 : 0] bram_we_a;
-  output wire [14 : 0] bram_addr_a;
-  output wire [127 : 0] bram_wrdata_a;
-  input bit [127 : 0] bram_rddata_a;
+  output wire [3 : 0] bram_we_a;
+  output wire [18 : 0] bram_addr_a;
+  output wire [31 : 0] bram_wrdata_a;
+  input bit [31 : 0] bram_rddata_a;
 endmodule
 `endif

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 28 14:49:16 2026
+# Process ID         : 387146
+# Current directory  : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1
+# Command line       : vivado -log Blocks_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Blocks_wrapper.tcl -notrace
+# Log file           : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/Blocks_wrapper.vdi
+# Journal file       : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/impl_1/vivado.jou
+# Running On         : gareth-inspiron153520
+# Platform           : ManjaroLinux
+# Operating System   : Manjaro Linux
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency      : 3886.912 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 12203 MB
+# Swap memory        : 25769 MB
+# Total Virtual      : 37973 MB
+# Available Virtual  : 24898 MB
+#-----------------------------------------------------------
+source Blocks_wrapper.tcl -notrace

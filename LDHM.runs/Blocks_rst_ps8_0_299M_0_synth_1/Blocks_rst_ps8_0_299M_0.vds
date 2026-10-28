@@ -1,0 +1,291 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 02-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 28 14:40:23 2026
+# Process ID         : 383347
+# Current directory  : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_rst_ps8_0_299M_0_synth_1
+# Command line       : vivado -log Blocks_rst_ps8_0_299M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Blocks_rst_ps8_0_299M_0.tcl
+# Log file           : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_rst_ps8_0_299M_0_synth_1/Blocks_rst_ps8_0_299M_0.vds
+# Journal file       : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_rst_ps8_0_299M_0_synth_1/vivado.jou
+# Running On         : gareth-inspiron153520
+# Platform           : ManjaroLinux
+# Operating System   : Manjaro Linux
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency      : 2961.568 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 12203 MB
+# Swap memory        : 25769 MB
+# Total Virtual      : 37973 MB
+# Available Virtual  : 23594 MB
+#-----------------------------------------------------------
+source Blocks_rst_ps8_0_299M_0.tcl -notrace
+Command: synth_design -top Blocks_rst_ps8_0_299M_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 384190
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:01:24 . Memory (MB): peak = 2930.043 ; gain = 170.766 ; free physical = 149 ; free virtual = 7129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Blocks_rst_ps8_0_299M_0' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/synth/Blocks_rst_ps8_0_299M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/synth/Blocks_rst_ps8_0_299M_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/gareth/Vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/gareth/Vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/home/gareth/Vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:170733]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/home/gareth/Vivado/2026.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:968]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/home/gareth/Vivado/2026.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/home/gareth/Vivado/2026.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at '/home/gareth/Vivado/2026.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ipshared/9438/hdl/proc_sys_reset_v5_0_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'Blocks_rst_ps8_0_299M_0' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/synth/Blocks_rst_ps8_0_299M_0.vhd:74]
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:01:34 . Memory (MB): peak = 3022.012 ; gain = 262.734 ; free physical = 390 ; free virtual = 6076
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:01:34 . Memory (MB): peak = 3022.012 ; gain = 262.734 ; free physical = 380 ; free virtual = 6059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:01:34 . Memory (MB): peak = 3022.012 ; gain = 262.734 ; free physical = 380 ; free virtual = 6059
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3030.012 ; gain = 0.000 ; free physical = 338 ; free virtual = 6031
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/Blocks_rst_ps8_0_299M_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/Blocks_rst_ps8_0_299M_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/Blocks_rst_ps8_0_299M_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_rst_ps8_0_299M_0/Blocks_rst_ps8_0_299M_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_rst_ps8_0_299M_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_rst_ps8_0_299M_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gareth/Vivado/2026.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Blocks_rst_ps8_0_299M_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Blocks_rst_ps8_0_299M_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3119.391 ; gain = 0.000 ; free physical = 346 ; free virtual = 5639
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3119.426 ; gain = 0.000 ; free physical = 315 ; free virtual = 5634
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:02:25 . Memory (MB): peak = 3119.426 ; gain = 360.148 ; free physical = 256 ; free virtual = 5522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:02:25 . Memory (MB): peak = 3127.395 ; gain = 368.117 ; free physical = 254 ; free virtual = 5523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:02:26 . Memory (MB): peak = 3127.395 ; gain = 368.117 ; free physical = 258 ; free virtual = 5526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:02:28 . Memory (MB): peak = 3127.395 ; gain = 368.117 ; free physical = 262 ; free virtual = 5481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:02:32 . Memory (MB): peak = 3127.395 ; gain = 368.117 ; free physical = 205 ; free virtual = 5394
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:03:09 . Memory (MB): peak = 3754.461 ; gain = 995.184 ; free physical = 213 ; free virtual = 3518
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:03:09 . Memory (MB): peak = 3754.461 ; gain = 995.184 ; free physical = 204 ; free virtual = 3511
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:03:09 . Memory (MB): peak = 3783.508 ; gain = 1024.230 ; free physical = 166 ; free virtual = 3476
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:03:27 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 261 ; free virtual = 2606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:03:27 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 265 ; free virtual = 2607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:03:27 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 264 ; free virtual = 2599
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:03:27 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 264 ; free virtual = 2598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:03:27 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 262 ; free virtual = 2597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:03:27 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 263 ; free virtual = 2598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDRE  |    36|
+|9     |FDSE  |     4|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:03:27 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 261 ; free virtual = 2596
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:02:57 . Memory (MB): peak = 3979.320 ; gain = 1122.629 ; free physical = 268 ; free virtual = 2445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:03:33 . Memory (MB): peak = 3979.320 ; gain = 1220.043 ; free physical = 262 ; free virtual = 2443
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3979.320 ; gain = 0.000 ; free physical = 253 ; free virtual = 2445
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3979.320 ; gain = 0.000 ; free physical = 285 ; free virtual = 2622
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: a76268cb
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3979.320 ; gain = 0.000 ; free physical = 265 ; free virtual = 2736
+INFO: [Common 17-1381] The checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_rst_ps8_0_299M_0_synth_1/Blocks_rst_ps8_0_299M_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Blocks_rst_ps8_0_299M_0_utilization_synth.rpt -pb Blocks_rst_ps8_0_299M_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 14:45:15 2026...

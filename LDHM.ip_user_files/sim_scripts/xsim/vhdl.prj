@@ -24,6 +24,8 @@ vhdl cmpy_v6_0_28  \
 
 vhdl xil_defaultlib  \
 "../../../LDHM.gen/sources_1/ip/cmp_div2_1/sim/cmp_div2.vhd" \
+"../../../LDHM.gen/sources_1/ip/t1_multiplier/sim/t1_multiplier.vhd" \
+"../../../LDHM.gen/sources_1/ip/squarer/sim/squarer.vhd" \
 
 # Do not sort compile order
 nosort

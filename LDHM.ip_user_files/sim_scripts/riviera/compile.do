@@ -68,11 +68,14 @@ vcom -work cmpy_v6_0_28 -93  -incr \
 
 vcom -work xil_defaultlib -93  -incr \
 "../../../LDHM.gen/sources_1/ip/cmp_div2_1/sim/cmp_div2.vhd" \
+"../../../LDHM.gen/sources_1/ip/t1_multiplier/sim/t1_multiplier.vhd" \
+"../../../LDHM.gen/sources_1/ip/squarer/sim/squarer.vhd" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../../../../Vivado/2026.1/data/rsb/busdef" "+incdir+../../../LDHM.gen/sources_1/bd/Blocks/ipshared/ec67/hdl" "+incdir+../../../LDHM.gen/sources_1/bd/Blocks/ipshared/cec9/hdl" "+incdir+../../../LDHM.gen/sources_1/bd/Blocks/ipshared/f0b6/hdl/verilog" "+incdir+../../../LDHM.gen/sources_1/bd/Blocks/ipshared/00fe/hdl/verilog" "+incdir+/home/gareth/Vivado/2026.1/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xbip_utils_v3_0_16 -l axi_utils_v2_0_12 -l mult_gen_v12_0_25 -l xbip_pipe_v3_0_12 -l xbip_dsp48_wrapper_v3_0_7 -l floating_point_v7_1_22 -l cmpy_v6_0_28 -l xil_defaultlib \
 "../../../LDHM.srcs/sources_1/new/main.v" \
+"../../../LDHM.srcs/sources_1/new/trig_lookup.v" \
 "../../../LDHM.srcs/sources_1/new/twiddle.v" \
-"../../../LDHM.srcs/sim_1/new/tb_main.v" \
+"../../../../../../PROJECT SIMS/Sims/FPGA Reconstruction Testing/tb_main.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

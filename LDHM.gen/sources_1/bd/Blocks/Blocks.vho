@@ -53,11 +53,7 @@
 -- COMP_TAG     ------ Begin cut for COMPONENT Declaration ------
 COMPONENT Blocks
   PORT (
-    rstb_busy_0 : OUT STD_LOGIC;
-    rsta_busy_0 : OUT STD_LOGIC;
-    clk : OUT STD_LOGIC;
-    rst : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
-    result_0 : OUT STD_LOGIC_VECTOR(65 DOWNTO 0)
+
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -68,11 +64,7 @@ END COMPONENT;
 -- INST_TAG     ------ Begin cut for INSTANTIATION Template ------
 your_instance_name : Blocks
   PORT MAP (
-    rstb_busy_0 => rstb_busy_0,
-    rsta_busy_0 => rsta_busy_0,
-    clk => clk,
-    rst => rst,
-    result_0 => result_0
+
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

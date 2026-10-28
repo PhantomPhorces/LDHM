@@ -1,17 +1,35 @@
 Time resolution is 1 ps
-================================================================
- Running Block Design BRAM Streaming FFT Simulation
-================================================================
-----------------------------------------------------------------
- Total Valid Outputs Captured  : 512 (Expected: 512)
- Bin   0 (DC)           : Real =   4095, Imag =      0 (Expected: ~4096,     0)
- Bin  13 (Complex Tone) : Real =  16383, Imag =      0 (Expected: ~16384,    0)
- Bin  64 (+Cosine Tone) : Real =   4095, Imag =      0 (Expected: ~4096,     0)
- Bin 448 (-Cosine Tone) : Real =   4095, Imag =      0 (Expected: ~4096,     0)
- Max Noise Floor (Other 508 Bins): 0 LSBs
-----------------------------------------------------------------
- STATUS: PASS - BRAM streaming FFT matches theoretical spectrum!
- CSV written to: fft_sim_results.csv
-================================================================
-$finish called at time : 10895 ns : File "/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sim_1/new/tb_main.v" Line 175
-INFO: xsimkernel Simulation Memory Usage: 368184 KB (Peak: 433720 KB), Simulation CPU Usage: 1280 ms
+TB: metadata  T1_raw 2625257  dc 94  fwd masks 3f1fe  inv masks 201c0  output_shift 1
+TB: hologram word 0 = 0e0d0b0a (pixels 0..3 = 10 11 13 14)
+
+========== frame 1 started at cycle 120 ==========
+[132 cyc] PL read metadata: T1 2625257, masks 1fe 1f8 1c0 100, output_shift 1
+[131072 cyc | 0.524 ms] ... first_fft     
+[262144 cyc | 1.049 ms] ... first_fft     
+[262844 cyc | 1.051 ms] first_fft      done: 262712 cycles, 262144 writes (OK)
+    dumped /home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/dump_frame1_first_fft.mem
+[393216 cyc | 1.573 ms] ... second_fft    
+[524288 cyc | 2.097 ms] ... second_fft    
+[525560 cyc | 2.102 ms] second_fft     done: 262716 cycles, 262144 writes (OK)
+    dumped /home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/dump_frame1_second_fft.mem
+[655360 cyc | 2.621 ms] ... reconstruction
+[786432 cyc | 3.146 ms] ... reconstruction
+[787723 cyc | 3.151 ms] reconstruction done: 262163 cycles, 262144 writes (OK)
+    dumped /home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/dump_frame1_reconstruction.mem
+[917504 cyc | 3.670 ms] ... first_ifft    
+[1048576 cyc | 4.194 ms] ... first_ifft    
+[1050439 cyc | 4.202 ms] first_ifft     done: 262716 cycles, 262144 writes (OK)
+    dumped /home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/dump_frame1_first_ifft.mem
+[1179648 cyc | 4.719 ms] ... second_ifft   
+[1310720 cyc | 5.243 ms] ... second_ifft   
+[1313159 cyc | 5.253 ms] second_ifft    done: 262720 cycles, 262144 writes (OK)
+[1313185 cyc] frame 1 done: frame-output counter = 1, 1313065 cycles (5.252 ms of hardware time)
+Output writes: 262144 total, 0 pixels never written, 0 pixels written more than once, 0 bad writes (OK)
+Wrote /home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/sim_output_frame1.txt
+
+==================================================================
+TESTBENCH PASSED all structural checks (1 frame(s)).
+Now run: python3 check_reconstruction.py   (in /home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/)
+==================================================================
+$finish called at time : 5253138 ns : File "/home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/tb_main.v" Line 417
+INFO: xsimkernel Simulation Memory Usage: 394456 KB (Peak: 459992 KB), Simulation CPU Usage: 1508720 ms

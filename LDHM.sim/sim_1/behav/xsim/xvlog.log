@@ -5,9 +5,10 @@ INFO: [VRFC 10-311] analyzing module fft_stage
 INFO: [VRFC 10-311] analyzing module rounder_half_bits
 INFO: [VRFC 10-311] analyzing module butterfly
 INFO: [VRFC 10-311] analyzing module FIFO
-INFO: [VRFC 10-311] analyzing module BRAM
 INFO: [VRFC 10-311] analyzing module URAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/trig_lookup.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trig_lookup
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/twiddle.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module twiddle
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sim_1/new/tb_main.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gareth/Documents/PROJECT SIMS/Sims/FPGA Reconstruction Testing/tb_main.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_main

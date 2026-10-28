@@ -1,0 +1,598 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 02-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:01:26 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 28 14:40:23 2026
+# Process ID         : 383344
+# Current directory  : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1
+# Command line       : vivado -log Blocks_main_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Blocks_main_0_0.tcl
+# Log file           : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/Blocks_main_0_0.vds
+# Journal file       : /home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/vivado.jou
+# Running On         : gareth-inspiron153520
+# Platform           : ManjaroLinux
+# Operating System   : Manjaro Linux
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1235U
+# CPU Frequency      : 2799.920 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 12203 MB
+# Swap memory        : 25769 MB
+# Total Virtual      : 37973 MB
+# Available Virtual  : 23593 MB
+#-----------------------------------------------------------
+source Blocks_main_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/gareth/Vivado/2026.1/data/ip'.
+Command: synth_design -top Blocks_main_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 384189
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:01:24 . Memory (MB): peak = 2931.074 ; gain = 170.766 ; free physical = 140 ; free virtual = 7112
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Blocks_main_0_0' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_main_0_0/synth/Blocks_main_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:14]
+INFO: [Synth 8-6157] synthesizing module 'full_fft' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:776]
+	Parameter big_n bound to: 512 - type: integer 
+	Parameter data_size bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fft_stage' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cmp_div2' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/.Xil/Vivado-383344-gareth-inspiron153520/realtime/cmp_div2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cmp_div2' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/.Xil/Vivado-383344-gareth-inspiron153520/realtime/cmp_div2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'butterfly' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1008]
+	Parameter data_size bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'butterfly' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1008]
+INFO: [Synth 8-6157] synthesizing module 'rounder_half_bits' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:987]
+	Parameter data_size bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rounder_half_bits' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:987]
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6157] synthesizing module 'twiddle' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/twiddle.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'twiddle' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/twiddle.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized0' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized0' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized0' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized0' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized1' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized1' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized1' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized1' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized2' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized2' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized2' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized2' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized3' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized3' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized3' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized3' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized4' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized4' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized4' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized4' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized5' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized5' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized5' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized5' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized6' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized6' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized6' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized6' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6157] synthesizing module 'fft_stage__parameterized7' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter fifo_size bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIFO__parameterized7' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FIFO__parameterized7' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1047]
+INFO: [Synth 8-6155] done synthesizing module 'fft_stage__parameterized7' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:836]
+INFO: [Synth 8-6155] done synthesizing module 'full_fft' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:776]
+INFO: [Synth 8-6157] synthesizing module 'URAM' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1083]
+	Parameter data_size bound to: 32 - type: integer 
+	Parameter memory_size bound to: 262144 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'URAM' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'squarer' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/.Xil/Vivado-383344-gareth-inspiron153520/realtime/squarer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'squarer' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/.Xil/Vivado-383344-gareth-inspiron153520/realtime/squarer_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 't1_multiplier' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/.Xil/Vivado-383344-gareth-inspiron153520/realtime/t1_multiplier_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 't1_multiplier' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/.Xil/Vivado-383344-gareth-inspiron153520/realtime/t1_multiplier_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'trig_lookup' [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/trig_lookup.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'trig_lookup' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/trig_lookup.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:376]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Blocks_main_0_0' (0#1) [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_main_0_0/synth/Blocks_main_0_0.v:53]
+WARNING: [Synth 8-4767] Trying to implement RAM 'memory_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:1077]
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+WARNING: [Synth 8-6014] Unused sequential element fft_row_reg was removed.  [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.srcs/sources_1/new/main.v:430]
+INFO: [Synth 8-7129] Port shift_in_valid in module full_fft is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:01:44 . Memory (MB): peak = 3087.426 ; gain = 327.117 ; free physical = 368 ; free virtual = 5392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:01:44 . Memory (MB): peak = 3087.426 ; gain = 327.117 ; free physical = 569 ; free virtual = 5624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:01:44 . Memory (MB): peak = 3087.426 ; gain = 327.117 ; free physical = 569 ; free virtual = 5625
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3087.426 ; gain = 0.000 ; free physical = 200 ; free virtual = 5510
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/t1_multiplier/t1_multiplier/t1_multiplier_in_context.xdc] for cell 'inst/t1_applicator'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/t1_multiplier/t1_multiplier/t1_multiplier_in_context.xdc] for cell 'inst/t1_applicator'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/squarer/squarer/squarer_in_context.xdc] for cell 'inst/squarer_n'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/squarer/squarer/squarer_in_context.xdc] for cell 'inst/squarer_n'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/squarer/squarer/squarer_in_context.xdc] for cell 'inst/squarer_m'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/squarer/squarer/squarer_in_context.xdc] for cell 'inst/squarer_m'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[0].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[0].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[1].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[1].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[2].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[2].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[3].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[3].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[4].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[4].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[5].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[5].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[6].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[6].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[7].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[7].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[8].stage/mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/fft_unit/stages[8].stage/mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/recon_mult'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/ip/cmp_div2_1/cmp_div2/cmp_div2_in_context.xdc] for cell 'inst/recon_mult'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_main_0_0/Blocks_main_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.gen/sources_1/bd/Blocks/ip/Blocks_main_0_0/Blocks_main_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3150.836 ; gain = 0.000 ; free physical = 324 ; free virtual = 5527
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3150.871 ; gain = 0.000 ; free physical = 300 ; free virtual = 5524
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:02:39 . Memory (MB): peak = 3150.871 ; gain = 390.562 ; free physical = 157 ; free virtual = 4852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:02:40 . Memory (MB): peak = 3158.840 ; gain = 398.531 ; free physical = 161 ; free virtual = 4846
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:02:40 . Memory (MB): peak = 3158.840 ; gain = 398.531 ; free physical = 152 ; free virtual = 4827
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'global_state_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'initialisation_state_reg' in module 'main'
+INFO: [Synth 8-802] inferred FSM for state register 'reconstruction_state_reg' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+reconstruction_state_initialisation |                              001 |                               00
+reconstruction_state_read |                              010 |                               01
+reconstruction_state_transition |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'reconstruction_state_reg' using encoding 'one-hot' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+initialisation_state_sync |                              000 |                              000
+initialisation_state_latch |                              001 |                              001
+initialisation_state_poll |                              010 |                              010
+initialisation_state_read_t1 |                              011 |                              011
+initialisation_state_read_forward_mask |                              100 |                              100
+initialisation_state_read_inverse_mask |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'initialisation_state_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+state_global_initialisation |                              000 |                              000
+         state_first_fft |                              001 |                              001
+        state_second_fft |                              010 |                              010
+    state_reconstruction |                              011 |                              011
+        state_first_ifft |                              100 |                              100
+       state_second_ifft |                              101 |                              101
+          state_transfer |                              110 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'global_state_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:02:44 . Memory (MB): peak = 3158.840 ; gain = 398.531 ; free physical = 171 ; free virtual = 4580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 20    
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 2     
+	   2 Input   18 Bit       Adders := 3     
+	   2 Input   17 Bit       Adders := 18    
+	   3 Input   17 Bit       Adders := 18    
+	   2 Input   16 Bit       Adders := 37    
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 9     
+	   2 Input    9 Bit       Adders := 6     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 7     
+	   2 Input    3 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 5     
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input     15 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 37    
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 70    
+	               24 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 7     
+	               16 Bit    Registers := 4     
+	               15 Bit    Registers := 5     
+	                9 Bit    Registers := 12    
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 32    
++---RAMs : 
+	            8192K Bit	(131072 X 64 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 67    
+	   4 Input   32 Bit        Muxes := 4     
+	   6 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 4     
+	   3 Input   19 Bit        Muxes := 1     
+	   4 Input   19 Bit        Muxes := 2     
+	   7 Input   19 Bit        Muxes := 2     
+	   3 Input   18 Bit        Muxes := 1     
+	   4 Input   18 Bit        Muxes := 2     
+	   7 Input   18 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 43    
+	   2 Input   15 Bit        Muxes := 38    
+	   2 Input   10 Bit        Muxes := 11    
+	   3 Input    9 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 2     
+	   7 Input    9 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 27    
+	   3 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 25    
+	   6 Input    1 Bit        Muxes := 7     
+	   7 Input    1 Bit        Muxes := 37    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port shift_in_valid in module full_fft is either unconnected or has no load
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"URAM:/genblk1[1].memory_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"URAM:/genblk1[1].memory_reg"'.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:03:37 . Memory (MB): peak = 3212.137 ; gain = 451.828 ; free physical = 262 ; free virtual = 2657
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "genblk1[1].memory_reg" defined in module: "URAM:" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "genblk1[1].memory_reg" defined in module: "URAM:" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|twiddle     | twiddle    | 256x32        | LUT            | 
+|trig_lookup | sin        | 1024x16       | LUT            | 
+|trig_lookup | sin        | 1024x16       | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|fft_stage   | p_0_out    | 256x32        | LUT            | 
+|trig_lookup | p_0_out    | 1024x16       | LUT            | 
+|trig_lookup | p_0_out    | 1024x16       | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Ultra RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | URAM288 | Matrix Shape | FF provided for Pipeline | FF absorbed | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|URAM:       | genblk1[1].memory_reg | 128 K x 64             | W |   | 128 K x 64             |   | R | Port A and B     | 32      | 8x4          | 0                        | 0           | 
+|URAM:       | genblk1[1].memory_reg | 128 K x 64             | W |   | 128 K x 64             |   | R | Port A and B     | 32      | 8x4          | 0                        | 0           | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Ultra RAMs at the current stage of the synthesis flow. Some Ultra RAMs may be reimplemented as non Ultra RAM primitives later in the synthesis flow. Multiple instantiated Ultra RAMs are reported only once. Fields "FF provided for Pipeline" and "FF absorbed" respectively indicate number of registers available for pipelining and number of registers absorbed in the URAM matrix for pipelining. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------------------+-----------------+----------------+----------------------+-----------------+
+|Module Name                     | RTL Object      | Inference      | Size (Depth x Width) | Primitives      | 
++--------------------------------+-----------------+----------------+----------------------+-----------------+
+|inst/fft_unit/\stages[0].stage  | fifo/memory_reg | User Attribute | 256 x 32             | RAM256X1S x 32  | 
+|inst/fft_unit/\stages[1].stage  | fifo/memory_reg | User Attribute | 128 x 32             | RAM128X1S x 32  | 
+|inst/fft_unit/\stages[2].stage  | fifo/memory_reg | User Attribute | 64 x 32              | RAM64X1S x 32   | 
+|inst/fft_unit/\stages[3].stage  | fifo/memory_reg | User Attribute | 32 x 32              | RAM32X1S x 32   | 
+|inst/fft_unit/\stages[4].stage  | fifo/memory_reg | User Attribute | 16 x 32              | RAM16X1S x 32   | 
+|inst/fft_unit/\stages[5].stage  | fifo/memory_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|inst/fft_unit/\stages[6].stage  | fifo/memory_reg | User Attribute | 4 x 32               | RAM16X1S x 32   | 
+|inst/fft_unit/\stages[7].stage  | fifo/memory_reg | User Attribute | 2 x 32               | RAM16X1S x 32   | 
++--------------------------------+-----------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:04:14 . Memory (MB): peak = 3850.906 ; gain = 1090.598 ; free physical = 255 ; free virtual = 2309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:04:22 . Memory (MB): peak = 3930.531 ; gain = 1170.223 ; free physical = 256 ; free virtual = 2000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "genblk1[1].memory_reg" defined in module: "URAM:" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "genblk1[1].memory_reg" defined in module: "URAM:" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Ultra RAM: Final Mapping Report
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | URAM288 | Matrix Shape | FF provided for Pipeline | FF absorbed | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|URAM:       | genblk1[1].memory_reg | 128 K x 64             | W |   | 128 K x 64             |   | R | Port A and B     | 32      | 8x4          | 0                        | 0           | 
+|URAM:       | genblk1[1].memory_reg | 128 K x 64             | W |   | 128 K x 64             |   | R | Port A and B     | 32      | 8x4          | 0                        | 0           | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+
+
+Distributed RAM: Final Mapping Report
++--------------------------------+-----------------+----------------+----------------------+-----------------+
+|Module Name                     | RTL Object      | Inference      | Size (Depth x Width) | Primitives      | 
++--------------------------------+-----------------+----------------+----------------------+-----------------+
+|inst/fft_unit/\stages[0].stage  | fifo/memory_reg | User Attribute | 256 x 32             | RAM256X1S x 32  | 
+|inst/fft_unit/\stages[1].stage  | fifo/memory_reg | User Attribute | 128 x 32             | RAM128X1S x 32  | 
+|inst/fft_unit/\stages[2].stage  | fifo/memory_reg | User Attribute | 64 x 32              | RAM64X1S x 32   | 
+|inst/fft_unit/\stages[3].stage  | fifo/memory_reg | User Attribute | 32 x 32              | RAM32X1S x 32   | 
+|inst/fft_unit/\stages[4].stage  | fifo/memory_reg | User Attribute | 16 x 32              | RAM16X1S x 32   | 
+|inst/fft_unit/\stages[5].stage  | fifo/memory_reg | User Attribute | 8 x 32               | RAM16X1S x 32   | 
+|inst/fft_unit/\stages[6].stage  | fifo/memory_reg | User Attribute | 4 x 32               | RAM16X1S x 32   | 
+|inst/fft_unit/\stages[7].stage  | fifo/memory_reg | User Attribute | 2 x 32               | RAM16X1S x 32   | 
++--------------------------------+-----------------+----------------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:04:29 . Memory (MB): peak = 3995.031 ; gain = 1234.723 ; free physical = 268 ; free virtual = 1798
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:04:47 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 252 ; free virtual = 6287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:04:47 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 251 ; free virtual = 6284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:04:49 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 1030 ; free virtual = 8957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:47 ; elapsed = 00:04:49 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 1032 ; free virtual = 8961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:47 ; elapsed = 00:04:49 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 1029 ; free virtual = 8959
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:47 ; elapsed = 00:04:49 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 964 ; free virtual = 8944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|main        | fft_unit/stages[0].stage/allignment_shift_register_reg[4][31] | 5      | 288   | NO           | NO                 | YES               | 288    | 0       | 
+|main        | magnitude_address_shift_register_reg[3][17]                   | 4      | 18    | NO           | NO                 | YES               | 18     | 0       | 
+|main        | magnitude_max_shift_register_reg[1][2]                        | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
++------------+---------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |squarer       |         2|
+|2     |t1_multiplier |         1|
+|3     |cmp_div2      |        10|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |cmp_div2      |    10|
+|11    |squarer       |     2|
+|13    |t1_multiplier |     1|
+|14    |CARRY8        |   253|
+|15    |LUT1          |   106|
+|16    |LUT2          |   742|
+|17    |LUT3          |   592|
+|18    |LUT4          |   311|
+|19    |LUT5          |  1170|
+|20    |LUT6          |  1235|
+|21    |MUXF7         |   244|
+|22    |MUXF8         |    40|
+|23    |RAM128X1S     |    32|
+|24    |RAM16X1S      |   128|
+|25    |RAM256X1S     |    32|
+|26    |RAM32X1S      |    32|
+|27    |RAM64X1S      |    32|
+|28    |SRL16E        |   309|
+|29    |URAM288       |    64|
+|32    |FDRE          |  1609|
+|33    |FDSE          |     2|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:47 ; elapsed = 00:04:49 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 954 ; free virtual = 8944
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:04:15 . Memory (MB): peak = 4096.789 ; gain = 1273.035 ; free physical = 134 ; free virtual = 8840
+Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:04:55 . Memory (MB): peak = 4096.789 ; gain = 1336.480 ; free physical = 133 ; free virtual = 8835
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4096.789 ; gain = 0.000 ; free physical = 218 ; free virtual = 8851
+INFO: [Netlist 29-17] Analyzing 793 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4096.789 ; gain = 0.000 ; free physical = 1015 ; free virtual = 11438
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 32 instances
+  RAM16X1S => RAM32X1S (RAMS32): 128 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: b6f9bc2c
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+89 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Coretcl 2-1174] Renamed 54 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4096.789 ; gain = 0.000 ; free physical = 270 ; free virtual = 11228
+INFO: [Common 17-1381] The checkpoint '/home/gareth/Documents/Computer Engineering/A PROJECT/LDHM/LDHM.runs/Blocks_main_0_0_synth_1/Blocks_main_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Blocks_main_0_0_utilization_synth.rpt -pb Blocks_main_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 14:46:40 2026...
